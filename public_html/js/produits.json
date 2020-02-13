@@ -1,0 +1,26 @@
+produits=[{
+"type":"Swing Robe Fiona Femme",
+"prix-min":"87.24",
+"prix-max":"145.67",
+"Taille":"x-small",
+"Couleur":"1",
+"desciption":"100% Polyester\r\nLavage ? sec uniquement\r\nManches 3\/4\r\n",
+"Image1":"swing_b1.jpg",
+"Image2":"swing_b2.jpg",
+"Image3":"swing_b3.jpg",
+"Image4":"swing_b4.jpg",
+"Index":"1"
+},
+{
+"type":"Swing Robe Fiona Femme",
+"prix-min":"87.24",
+"prix-max":"145.67",
+"Taille":"x-small",
+"Couleur":"2",
+"desciption":"100% Polyester\r\nLavage ? sec uniquement\r\nManches 3\/4\r\n",
+"Image1":"swing_b1r.jpg",
+"Image2":"swing_b2r.jpg",
+"Image3":"swing_b3r.jpg",
+"Image4":"swing_b4r.jpg",
+"Index":"2"
+}]

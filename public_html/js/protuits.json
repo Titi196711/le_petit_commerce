@@ -1,0 +1,80 @@
+let text = '{produits : [
+    {
+        "type": "Swing Robe Fiona Femme",
+        "prixmin": "87.24",
+        "prixmax": "145.67",
+        "Taille": ["x-small", "small", "medium", "large", "x-large"],
+        "Couleur": "Blanche",
+        "description": ["100% Polyester", "Lavage ? sec uniquement", "Manches 3/4"],
+        "Image1": "swing/swing_b1.jpg",
+        "Image2": "swing/swing_b2.jpg",
+        "Image3": "swing/swing_b3.jpg",
+        "Image4": "swing/swing_b4.jpg",
+        "Index": "0"
+    },
+    {
+        "type": "Swing Robe Fiona Femme",
+        "prixmin": "83.97",
+        "prixmax": "119.95",
+        "Taille": ["x-small", "small", "medium", "large", "x-large"],
+        "Couleur": "Rouge",
+        "description": ["100% Polyester", "Lavage ? sec uniquement", "Manches 3/4"],
+        "Image1": "swing/swing_b1r.jpg",
+        "Image2": "swing/swing_b2r.jpg",
+        "Image3": "swing/swing_b3r.jpg",
+        "Image4": "swing/swing_b4r.jpg",
+        "Index": "1"
+    },
+    {
+        "type": "Swing Robe Ida Femme",
+        "prixmin": "87.24",
+        "prixmax": "145.67",
+        "Taille": ["x-small", "small", "medium", "large", "x-large"],
+        "Couleur": "Bleue",
+        "description": ["100% viscose, 100% Polyester", "Lavage en machine 30 max", "Sans Manches"],
+        "Image1": "swing/swing_ida1.jpg",
+        "Image2": "swing/swing_ida2.jpg",
+        "Image3": "",
+        "Image4": "",
+        "Index": "2"
+    },
+    {
+        "type": "Swing Robe Sina Femme",
+        "prixmin": "78.99",
+        "prixmax": "92.95",
+        "Taille": ["x-small", "small", "medium", "large", "x-large"],
+        "Couleur": "Bleue",
+        "description": ["100% viscose, 100% Polyester", "Lavage en machine 30 max", "Sans Manches"],
+        "Image1": "swing/swing_sina1.jpg",
+        "Image2": "swing/swing_sina2.jpg",
+        "Image3": "",
+        "Image4": "",
+        "Index": "3"
+    },
+    {
+        "type": "Homeyee Vintage à manche 3/4 en dentelle florale brodée cocktail",
+        "prixmin": "37.99",
+        "prixmax": "45.18",
+        "Taille": ["x-small", "small", "medium", "large", "x-large"],
+        "Couleur": "Rouge",
+        "description": ["95% Polyester", "5% Elasthanne", "Manches 3/4"],
+        "Image1": "swing/Homeye-r1.jpg",
+        "Image2": "swing/Homeye-r2.jpg",
+        "Image3": "swing/Homeye-r3.jpg",
+        "Image4": "swing/Homeye-r4.jpg",
+        "Index": "4"
+    },
+{
+        "type": "KoJooin Robe de Soirée Femme Dentelle Audrey Hepburn 1950 Robe Vintage Rétro Élégant Robe de Cocktail années 50",
+        "prixmin": "26.99",
+        "prixmax": "32.99",
+        "Taille": ["x-small", "small", "medium", "large", "x-large"],
+        "Couleur": "Bleue",
+        "description": ["97% Polyester", "3% Spandex", "Col rond, Taille Élastique,"],
+        "Image1": "swing/Kojooin_b1.jpg",
+        "Image2": "swing/Kojooin_b2.jpg",
+        "Image3": "swing/Kojooin_b3.jpg",
+        "Image4": "swing/Kojooin_b4.jpg",
+        "Index": "5"
+    }
+]}';

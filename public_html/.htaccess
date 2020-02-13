@@ -1,0 +1,3 @@
+# make tests that use utf-16 not inherit the encoding for testharness.js et. al.
+AddCharset utf-8 .css .js
+Header set X-Content-Type-Options nosniff 

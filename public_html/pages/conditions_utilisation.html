@@ -1,0 +1,435 @@
+<html>
+    <head>
+        <title>Condition d'utilisation</title>
+        <title>Le Petit Commerce - Réservation</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../lPC.css" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="hambu">
+                <a href="#" onclick="openNav()">
+                    <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                </a>
+            </nav>
+            <img src="../images/le_petit_commerce.png" alt="Logo du Petit Commerce" id='logoLPC'/>
+            <a href='../pages/femmes.html' target='_blank'>
+                <p id='fem'>FEMMES</p></a>
+            <a href='../pages/hommes.html' target='_blank'>
+                <p id='hom'>HOMMES</p></a>
+            <!--<div id='rechercher'></div>-->
+            <form method='post' action="recherche.php" accept-charset="utf-8">
+                <input type="search" name="rech" id="rech" placeholder="Vous recherchez ..." size=30 maxlength="30"/>
+                <button id="loupe" type="submit" class="loupe">
+                    <img src="../images/icone_loupe.png" alt="Icone pour lancer la recherche" id='ico_loupe'/>
+                </button>
+            </form>
+            <!--</div>-->
+            <div id='trois_icones'>
+                <a href="../pages/inscription.html"><img src="../images/icone_compte.png" alt="Icone pour accéder à votre compte" id='ico_compte' title="Icone pour accéder à votre compte"/></a>
+                <img src="../images/icone_ajoupan.png" alt="Icone pour ajouter un article au panier" id='ico_ajoupan' onclick="ajpanier()"/>
+                <img src="../images/icone_panier.png" alt="Icone de votre panier" id='ico_panier' onclick="panierpage()"/>
+            </div>
+            <div id="sideNavigation" class="sidenav">
+                <!--<a href="#" class='menu'>Menu</a>-->
+                <p class="menu" >Menu</p>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+                <button class="dropdown-btn">Femmes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/robes.html" target="_blank">Robes</a>
+                    <a href="../pages/jupes.html" target="_blank">Jupes</a>
+                    <a href="../pages/escarpins.html" target="_blank">Escarpins</a>
+                    <a href="../pages/lunettes.html" target="_blank">Lunettes de soleil</a>
+                    <a href="../pages/sacs.html" target="_blank">Sacs</a>
+                </div>
+                <button class="dropdown-btn">Hommes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/chemises.html" target="_blank">Chemises</a>
+                    <a href="../pages/pantalons.html" target="_blank">Pantalons</a>
+                    <a href="../pages/blousons.html" target="_blank">blousons et Manteaux</a>
+                    <a href="../pages/chapeaux.html" target="_blank">Bonnets, casquettes et chapeaux</a>
+                </div>
+                <button class="dropdown-btn">Divers
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/baskets.html">baskets</a>
+                </div>
+            </div>
+            <fieldset id="choix_lan">
+                <label for="radio_fr">
+                    <input type="radio" checked="checked" name="lan" id="radio_fr" value="1"/>
+                    <img src="../images/icone_fr.png" alt="drapeau Français" id="ico_fr"/>
+                </label>
+                <label for="radio_uk">
+                    <input type="radio" name="lan" id="radio_uk" value="2"/>
+                    <img src="../images/icone_uk.png" alt="drapeau Anglais" id="ico_uk"/>
+                </label>
+            </fieldset>
+        </header>
+
+        <main  id="mentions_legales">
+            <h1>conditions d'utilisation</h1>
+            <p>Ifocop Limited, (numéro d'immatriculation 11 94 000 47 94) )  et 
+                Ifocop sont les uniques propriétaires et exploitants du site et de l’application pour portable Ifocop (les “Sites”). 
+                Ifocop (numéro d'immatriculation 11 94 000 47 94 est le propriétaire et exploitant des Magasins Ifocop (« Magasin »).
+                Ensemble, ML, MUFI et MRL seront ci-après désignés par « nous », « nos »  et « Ifocop ». Notre siège social se trouve à Ifocop HQ, 14 Avenue Gustave Eiffel 78180 Montigny le Bretonneux FRANCE.</p> 
+            <p>Les présentes conditions (“conditions”) établissent la manière dont 
+                vous pouvez utiliser les Sites et leur contenu, que ce soit en tant 
+                qu'utilisateur d'un compte Ifocop ou en tant qu'invité (c'est-è-dire
+                lorsque vous vous servez des Sites ou naviguez dessus sans vous 
+                connecter è un compte Ifocop), ou si vous vous rendez en Magasin. 
+                Cette utilisation se définit notamment mais sans s'y limiter comme 
+                l'accés aux Sites et/ou leur navigation (avec ou sans achats), 
+                l'inscription et/ou la soumission de Contributions (définies ci-aprés).</p>
+            <p>Ces conditions définissent également la bonne manière d'interagir
+                avec nos pages Facebook, Twitter, Instagram et YouTube officielles (les « Réseaux
+                sociaux »). Dans ce contexte, le terme « Interagir » ou «
+                Interaction » désigne, sans s'y limiter : rejoindre notre groupe/page
+                Ifocop officielle, la suivre, « aimer » nos publications, les «
+                retweeter » ou écrire un commentaire s'y rapportant sur les Réseaux
+                sociaux.</p>
+            <p>Ensemble, les Sites, les Magasins et les Réseaux sociaux seront ci-après désignés
+                comme les “Services”.</p>
+            <p>Veuillez également lire nos <a href="#tab1">Termes et Conditions de vente*</a>, qui
+                concernent l’achat d’Articles sur les Sites et en Magasin, notre <a href="#tab4">Politiques de
+                    confidentialité**</a> et notre <a href="#tab5">Politiques relative aux cookies***</a>,
+                qui concerne les informations recueillies lors de votre utilisation 
+                des Services et autres services proposés par Ifocop ("Autres 
+                terme").</p>
+            <p>Nous vous demandons de prendre connaissance de tous les terme et 
+                conditions et Autres terme avant de commencer à utiliser les Services. 
+                L'utilisation des Sites ou des Magasins ainsi que l'Interaction avec nos
+                pages sur les Réseaux sociaux impliquent automatiquement la pleine 
+                acceptation et le respect des présentes conditions (collectivement "nos
+                terme"). Vous ne devez pas utiliser nos Services si vous n'acceptez 
+                pas nos terme.</p>
+            <p>Il vous revient également de vous assurer que toutes les personnes qui utilisent les
+                Services à l'aide de votre connexion Internet aient pris connaissance de Nos
+                terme et les respectent.</p>
+            <p>Nous nous réservons le droit de modifier ces conditions régulièrement.
+                La dernière mise à jour de ces conditions a eu lieu le 26 octobre 2016.</p>
+            <h3>Contenu des services</h3>
+            <p>Le contenu des Services n'est fourni qu'à titre d'information et ne
+                saurait être considéré comme des conseils à suivre.</p>
+            <p>Nous mettrons régulièrement les Services à jour et leur contenu peut
+                donc changer à tout moment.</p>
+            <p>Bien que nous nous efforcions dans la mesure du possible de mettre les informations sur les
+                Services à jour, nous n'offrons aucune garantie ni assurance, expresse ou
+                implicite, que le contenu des Services soit exact, complet ni à jour.</p>
+            <p>Nous ne garantissons pas non plus que l'accès aux Services ni à leur
+                contenu soit toujours constant et ininterrompu. Nous nous réservons le droit d'interrompre
+                les Services, de les retirer ou de les modifier à tout moment et sans
+                préavis.</p>
+            <h3>Passer commande sur les Sites</h3>
+            <p>Pour passer une Commande sur nos Sites (et ce même si vous êtes 
+                invité c'est-à-dire que vous n'êtes pas connecté-e à un compte 
+                Ifocop ("Invité")), vous devrez nous fournir diverses informations 
+                personnelles, notamment votre nom, votre adresse email, votre adresse de
+                facturation, votre adresse de livraison et votre numéro de téléphone. 
+                Vous devez vous assurer que toutes les informations fournies sont 
+                correctes et vous appartiennent (par exemple, il est interdit d'utiliser
+                une adresse email générique (comme <a href="https://www.ifocop.com">comptes@ifocop.com</a>)
+                ou une adresse appartenant à une autre personne) dans le but d'assurer 
+                l'exactitude et la sécurité de vos informations et de nous aider à 
+                personnaliser nos services. L'adresse email que vous fournissez en tant 
+                qu’Invité-e sert à vous relier à votre Commande, il est donc important 
+                qu'elle vous soit personnelle, de maniére à assurer que vous 
+                informations restent sécurisées, exactes et mises à jour.</p>
+            <p>Lorsque vous passerez Commande en tant qu'Invité-e, nous vous 
+                offrirons la possibilité de vous créer un Compte Ifocop. Nous nous 
+                servirons des informations déjà fournies lors de la commande pour vous 
+                inscrire, de sorte que vous n'aurez qu’à ajouter un mot de passe qui 
+                deviendra nécessaire pour vous connecter à votre Compte. Vous devez vous
+                assurer que l'adresse email communiquée soit bien la vôtre. S'il ne 
+                s'agit pas de la vôtre, ne vous inscrivez pas avec, sans quoi la tierce 
+                personne pouvant se servir de l'adresse pourrait accéder à votre Compte 
+                et à toutes les Informations relatives au Compte (voir ci-aprés). Vous 
+                devez également vous assurer que votre mot de passe ne soit pas aisément
+                devinable par d'autres afin que vos Informations restent en sécurité.</p>
+            <p>Si vous détenez un Compte Ifocop et que vous essayez de passer 
+                commande sans vous connecter, une fois votre adresse email saisie (s'il 
+                s'agit de l’adresse liée à votre Compte), il vous sera demandé de vous 
+                connecter en saisissant votre mot de passe. Si vous saisissez votre mot 
+                de passe, vous serez connecté-e et les champs correspondants de votre 
+                commande seront automatiquement remplis avec vos Informations 
+                personnelles. Si vous décidez de ne pas saisir votre mot de passe, vous 
+                serez considéré-e comme Invité-e et devrez remplir les champs vous-m 
+                ême.</p>
+            <p>Pour toute commande passée en tant qu'Invité, nous sauvegarderons les
+                informations de Commande avec votre adresse email. Ce processus sera 
+                répété à chaque fois que vous utiliserez les Sites et passerez Commande 
+                avec cette même adresse.</p>
+            <h3>Informations relatives à votre compte</h3>
+            <p>Lorsque vous créez un compte Ifocop, il vous faut fournir 
+                certaines informations personnelles, notamment votre nom, votre adresse 
+                email, votre adresse de facturation, votre adresse de livraison, votre 
+                date de naissance. Il vous sera également demandé de fournir une adresse
+                email et un mot de passe avec lesquels vous vous connecterez à votre 
+                Compte Ifocop ("Informations de connexion") (collectivement, 
+                "Informations personnelles"). Vous devez vous assurer que le mot de 
+                passe choisi ne puisse pas être deviné facilement par une tierce 
+                personne afin de que les Informations de votre Compte soient en 
+                sécurité.</p>
+            <p>Vous devrez vérifier vos Informations personnelles régulièrement et 
+                les mettre à jour en cas de changement, par exemple en cas de 
+                déménagement, de nouvelle adresse email ou de changement de nom. Il est 
+                de votre responsabilité de vous assurer que vos Informations 
+                personnelles soient exactes et à jour. Ceci nous permet également de 
+                personnaliser nos services et d’être aussi efficaces que possible ; par 
+                exemple, nous nous servirons de ces informations pour remplir 
+                automatiquement les champs nécessaires lorsque vous désirez passer 
+                commande.</p>
+            <p>Il est important que vos Informations personnelles soient bien les 
+                vôtres (et ne soient pas utilisés par d’autres). Par exemple, il est 
+                interdit d’utiliser comme Informations de connexion une adresse email 
+                générique (par ex. <a href="mailto:accounts@Ifocop.com">accounts@Ifocop.com</a>) ni une adresse email utilisée par quelqu’un d’autre.</p>
+            <p>Vous devez également traiter toutes vos informations personnelles 
+                comme confidentielles. Ne révélez sous aucun prétexte vos Informations 
+                de connexion à un tiers. Si vous savez ou suspectez qu’une autre 
+                personne connait vos Informations de connexion, vous devez nous en 
+                informer immédiatement en contactant notre Service client à l’adresse <a href="mailto:serviceclient@Ifocopfr.fr">serviceclient@Ifocopfr.fr</a> ou par courrier à Customer Care, Ifocop Limited, 75 Trafford Wharf Road, Manchester, United Kingdom, M17 1ES.</p>
+            <p>Vos Informations personnelles et votre historique de commandes 
+                (c’est-à-dire les informations relatives aux commandes que vous avez 
+                placées chez Ifocop) ("Informations du compte") seront disponibles 
+                dans votre Compte Ifocop. Vous devez toujours vous déconnecter de 
+                votre compte une fois votre utilisation terminée. Nous nous réservons le
+                droit de clôturer/suspendre/désactiver votre Compte Ifocop à 
+                n’importe quel moment et sous n’importe quelles circonstances, notamment
+                mais sans s’y limiter, si :</p>
+            <ol>
+                <li>1. nous apprenons qu’une personne non autorisée a accédé à votre Compte Ifocop,</li>
+                <li>2. il est fait usage d’un proxy (ou adresse IP mandataire) pour cacher l’utilisation de plusieurs comptes,</li>
+                <li>3. votre utilisation des Sites empêche de quelque manière que ce
+                    soit le déroulement normal de nos services, ou si nous avons des 
+                    raisons de croire que vous ne respectez pas les présentes conditions.</li>
+            </ol>
+            <h3>Soumission de contenu</h3>
+            <p>Vous ne devez pas publier ni transmettre, ni être responsable de la 
+                publication ou de la transmission de toute communication ou 
+                sollicitation dans le but d’obtenir le mot de passe, l’accès à un compte
+                ou les informations personnelles d’un-e autre utilisateur-rice des 
+                Services. Il est expressément interdit d’utiliser les Services dans le 
+                but de porter atteinte à la sécurité de tout réseau informatique, de 
+                découvrir des mots de passe ou des codes de chiffrement, de transférer 
+                ou d’emmagasiner du contenu illégal, ou d’exercer une activité illégale 
+                quelconque.</p>
+            <h3>Droits de propriété intellectuelle</h3>
+            <p>Les droits de propriété intellectuelle relatifs aux Services (incluant mais
+                sans s'y limiter le contenu et les logiciels des Services) demeurent notre propriété
+                exclusive ou celle de nos concédants de licence (selon le cas). Ces droits sont protégés
+                par les lois et traités sur le droit d'auteur dans le monde entier et sont
+                expressément réservés.</p>
+            <p>Toute utilisation des Services, notamment mais sans s'y limiter la reproduction ou le
+                stockage du contenu, même partiellement, à des fins commerciales est interdite
+                sans notre consentement préalable écrit. </p>
+            <p>Vous pouvez cependant imprimer une copie de n'importe quelle page des Sites ou en télécharger
+                des extraits pour votre utilisation personnelle.</p>
+            <p>Vous ne devez en aucun cas :</p>
+            <ol class="decimal">
+                <li> utiliser même partiellement le contenu des Services à des fins commerciales
+                    sans notre consentement préalable ;
+                </li>
+                <li> modifier d'aucune manière les copies papier ou numériques des pages
+                    que vous avez imprimées ou téléchargées, et vous n'avez
+                    pas non plus le droit d'utiliser les graphiques, illustrations, photographies et séquences
+                    vidéo ou audio sans le texte accompagnant. Il est interdit de publier, manipuler,
+                    distribuer ou reproduire sous quelque format que ce soit ni l'original, ni une
+                    copie du contenu des Services ou des produits fournis ;
+                </li>
+                <li> effectuer de modification, traduction, rétro-ingénierie, décompilation,
+                    désassemblage ou création de travaux dérivatifs à partir des
+                    logiciels ou documents fournis par nous-même ou nos concédants de licence
+                    dans le cadre des Services ;
+                </li>
+                <li> utiliser ou reproduire le nom “Ifocop” ni son logo (ou tout signe constituant une
+                    imitation) sans notre autorisation écrite préalable.
+                </li>
+            </ol>
+            <p>Il doit systématiquement et impérativement être fait mention de notre
+                statut d'auteur du contenu des Services (et celui de toute autre personne identifiée
+                comme y ayant contribué).</p>
+            <p>Vos Interactions avec nous sur les Réseaux sociaux pourront vous conduire à
+                publier du contenu, par exemple une photo ou une vidéo de vous (« Votre
+                contenu »). Dans ce cas, le fait d'Interagir avec nous sur les Réseaux
+                sociaux nous octroie par la présente une licence non exclusive, cessible, mondiale et
+                libre de redevances, nous permettant d'utiliser Votre contenu sur les Réseaux
+                sociaux et sur d'autres sources qui vous seront indiquées sur la page adéquate
+                du Réseau social. Cette licence inclut mais sans s'y limiter le droit d'utiliser
+                Votre Contenu, de le reproduire, de le modifier, de le réviser, de le traduire, d'en
+                tirer des œuvres dérivées et de le publier mondialement (entièrement ou
+                en partie) et/ou de l'intégrer à d'autres œuvres sous toute forme,
+                tout média ou toute technologie connus aujourd'hui ou développés
+                dans le futur. Cette utilisation de Votre Contenu peut également comprendre son
+                partage avec des parties tierces de confiance.</p>
+            <p>Si vous imprimez, copiez ou téléchargez toute partie de nos Services en
+                violation des présentes conditions d'utilisation, votre droit d'utiliser
+                les Services cessera immédiatement et vous devrez, si nous le souhaitons, nous rendre
+                ou détruire toutes les copies du matériel que vous auriez faites.</p>
+            <h3>Limitations de responsabilité</h3>
+            <p>Rien dans ces conditions d'utilisation n'exclut ni ne limite notre responsabilité
+                en cas de décès ou de dommages corporels dûs à une négligence,
+                une fraude ou une fausse représentation de notre part, ni aucune autre responsabilité
+                ne pouvant être écartée ou limitée selon le droit applicable.</p>
+            <p>Dans le cadre autorisé par la loi, nous nous dégageons de toutes conditions,
+                garanties, représentations et autres terme expresses ou implicites s'appliquant
+                aux Services ou à leur contenu.</p>
+            <p>Nous ne saurons être tenus pour responsables de pertes ni de dommages causés par
+                une rupture de contrat, un acte délictuel (y compris en cas de négligence),
+                une violation d'obligation légale ou autre, même prévisible découlant
+                de l'utilisation ou de l'impossibilité d'utiliser les Services.</p>
+            <p>Veuillez noter que nous fournissons ces Services exclusivement pour une utilisation privée
+                et domestique. Vous acceptez de ne jamais utiliser les Services à quelque fin
+                commerciale que ce soit, et nous ne saurions être tenus pour responsables d'aucune
+                perte de bénéfices ou d'exploitation, d'une interruption de commerce
+                ou de la perte d'une opportunité commerciale.</p>
+            <p>Nous n'acceptons aucune responsabilité relative aux pertes ou dommages éventuels
+                provoqués à la suite de votre utilisation des Services, des sites hyperliés
+                aux Services ou du téléchargement de leur contenu, par un virus, un déni
+                de service (ou Distributed Denial of Service) ou tout autre matériel
+                technologiquement nuisible susceptible d'infecter votre équipement informatique,
+                vos programmes, vos données ou tout autre matériel vous appartenant.</p>
+            <p>Nous ne garantissons pas que les Services soient sécurisés ou exempts d'erreurs
+                et de virus.</p>
+            <p>Vous êtes responsable de votre propre matériel informatique, de vos programmes
+                logiciels et de la plateforme grâce à laquelle vous accédez aux
+                Services. Vous devez utiliser votre propre logiciel de protection anti-virus.</p>
+            <h3>Interdictions</h3>
+            <p>Il est interdit d'utiliser nos Services à des fins abusives.</p>
+            <p>Il est notamment interdit d'introduire des virus, chevaux de Troie, bombes logiques ou
+                tout autre programme malveillant, technologiquement nocif, déloyal ou, de quelque
+                manière que ce soit, offensant ou obscène ; de provoquer une attaque en déni
+                de services ou une attaque en déni de service distribuée sur nos sites ; de
+                commettre ou d'encourager un acte criminel ; de corrompre les données ; d'importuner
+                les autres utilisateurs ; de porter atteinte aux droits de tiers (y compris, mais sans s'y
+                limiter, leurs droits de propriété intellectuelle) ; envoyer des publicités
+                ou du matériel promotionnel non sollicités / « spam » ; tenter de
+                détériorer les performances ou les fonctions des installations informatiques
+                accessibles via ces Sites ; et/ou pirater quelque aspect de ces Services que ce soit. La
+                violation des présentes dispositions constitue une infraction criminelle en vertu de
+                la loi sur le piratage électronique (Computer Misuse Act, 1990). Nous signalerons
+                toute infraction de ce type aux autorités concernées et leur apporterons notre
+                entière collaboration en leur communiquant notamment votre identité. Dans le
+                cas d'une violation, votre droit à utiliser les Services sera immédiatement
+                suspendu.</p>
+            <p>Il est interdit d'utiliser nos Services à des fins commerciales (y compris, mais
+                sans s'y limiter, avec des systèmes automatisés ou logiciels d'extraction
+                de données) sans notre consentement écrit préalable.</p>
+            <h3>Liens vers des sites et ressources tierces sur nos sites</h3>
+            <p>Les liens vers d'autres sites et ressources tierces présents sur nos Services ne
+                sont fournis qu'à titre d'information. Nous ne contrôlons pas le
+                contenu desdits sites ou ressources.</p>
+            <p>Nous n'assumons aucune responsabilité relativement au contenu des sites hyperliés.
+                Ces hyperliens ne signifient pas que nous approuvons les activités des sites en
+                question. Activer l'un de ces lien implique de quitter les Services, nous n'avons
+                par conséquent aucun contrôle sur les pertes ou dommages pouvant être
+                occasionnés par leur utilisation et déclinons par ailleurs toute
+                responsabilité à ce sujet.</p>
+            <h3>Réseaux sociaux</h3>
+            <p>Interagir avec nous sur les Réseaux sociaux (notamment mais sans s’y 
+                limiter : rejoindre notre groupe/page Facebook officielle ou vous 
+                abonner sur les Réseaux sociaux, "aimer", "retweeter", "reposter", 
+                écrire un commentaire relatif à une de nos page des Réseaux sociaux) 
+                ("Interagir" ou "Interaction" (selon le cas)) implique que vous 
+                consentez à ce que nous interagissions avec vous sur ledit Réseau social
+                et traitions les informations vous concernant disponibles sur le Réseau
+                social.
+            </p>
+            <p>Les informations vous concernant pouvant être recueillies lorsque 
+                vous Interagissez avec nous sur le Réseau social incluent notamment, 
+                mais sans s’y limiter, votre nom, votre profil d’utilisateur, votre âge,
+                vos préférences, vos choix et opinions concernant le sujet de la page 
+                en question sur le Réseau social, vos photos et autres images, et vos 
+                vidéos.</p>
+            <p>Interagir avec nous sur un Réseau social peut également vous amener à
+                soumettre une photo ou une vidéo de vous ("votre Image"). Veuillez 
+                noter que cela ne se produira qu'après avoir reçu votre consentement 
+                explicite.</p>
+            <p>Veuillez nous contacter aux coordonnées fournies ci-après si vous 
+                désirez à tout moment que nous cessions d’Interagir avec vous sur le 
+                Réseau social ou que nous cessions d’utiliser vos informations.</p>
+            <p>Interagir avec nous (sur les Sites, sur les Réseaux sociaux ou 
+                ailleurs) signifie que vous consentez à nous accorder une licence 
+                perpétuelle, mondiale, exempte de redevances et irrévocable nous 
+                permettant d’utiliser votre Image et vos Contributions à des fins 
+                publicitaires et promotionnelles pour Ifocop et les biens et 
+                services proposés par Ifocop, notamment mais sans s’y limiter dans 
+                le but d’assurer votre participation aux activités promotionnelles 
+                mentionnées et ce sur n’importe quelle plateforme, par exemple (sans 
+                limitation) à la télévision, sur les Réseaux sociaux, sur nos Sites, sur
+                papier et sur matériaux publicitaires extérieurs. Nous pourrons 
+                utiliser votre Image et vos Contributions à d’autres fins qui seront 
+                détaillées dans les terme et conditions des promotions indiqués sur 
+                notre page de <a href="https://www.Ifocopfr.fr/terms">conditions des promotions</a> et/ou lorsque nous recueillerons ladite Image.</p>
+            <p>Vous pourrez vous connecter aux Réseaux sociaux à partir des Sites 
+                grâce aux boutons "partager" ou autres. Se connecter aux Réseaux sociaux
+                à partir de ce service nous permet d’enrichir et de personnaliser votre
+                expérience des Sites. Dans le cadre de ce service, les Réseaux Sociaux 
+                nous laisseront accéder à certaines informations que vous divulguez sur 
+                lesdits Réseaux sociaux. Ces informations pourront être utilisées, 
+                sauvegardées et divulguées dans le respect de notre politique de 
+                confidentialité. Nous ne proposons cette fonctionnalité qu’à titre de 
+                commodité et leur intégration et inclusion n’implique aucune approbation
+                ni recommandation.</p>
+            <h3>Accessibilité</h3>
+            <p>Nous travaillons à améliorer l'accessibilité web de nos Sites afin
+                de faciliter leur utilisation par toutes les personnes. Au cours de l'année,
+                vous remarquerez des changements relatifs à la navigation, au texte, aux couleurs et
+                aux types de lecteurs d'écran.</p>
+            <h3>Droit applicable</h3>
+            <p>Les présentes conditions d'utilisation, leur sujet et leur formulation sont
+                soumis au droit anglais. Les différends résultant des présentes
+                conditions d'utilisation seront soumis à la juridiction non-exclusive des
+                tribunaux anglais.</p>
+            <h3>Contact
+            </h3>
+            <p>Pour toutes questions concernant ces terme, vous pouvez nous contacter en ligne ou par
+                courrier.</p>
+            <p><strong>En ligne : </strong>cliquez <a="../pages/contact.html">ici</a>
+            </p>
+            <p><strong>Par courrier :</strong> IFOCOP, 14 avenue Gustav EIFFEL 78180 Montigny le Bretonneux.</p></div>                </main>
+
+</main>
+
+<footer>
+    <ul>
+        <li><a href="../pages/mentions_legales.html" target="_blank">Mentions Légales</a></li>
+        <li><a href="../pages/conditions_utilisation.html" target="_blank">Condition d'utilisation</a></li>
+        <li><a href="../pages/politique_cookies.html" target="_blank">Politiques Relative aux Cookies</a></li>
+        <li><a href="../pages/politique_confidential.html" target="_blank">Politiques de confidentialité</a></li>
+        <li><a href="../pages/conditions_promotions.html" target="_blank">Condition des promotions</a></li>
+        <li><a href="../pages/termes_conditions.html" target="_blank">Termes et Conditions</a></li>
+    </ul>
+    <ul>
+        <li><a href="../pages/quisommesnous.html" target="_blank">Qui sommes nous ?</a></li>
+        <li><a href="../pages/ounoustrouver.html" target="_blank">Ou nous trouvez ?</a></li>
+        <li><a href="../pages/actuali.html" target="_blank">Actualités</a></li>
+    </ul>
+    <ul>
+        <li><a href="../pages/contact.html" target="_blank">Contactez-nous</a></li>
+        <li><a href="../pages/recrutement.html"  target="_blank">Nous recrutons !</a></li>
+        <li><a href="../pages/reservation.html" target="_blank">Prenez rendez vous</a></li>
+        <li><a href="../pages/avis.html" target="_blank">Avis</a></li>
+    </ul>
+    <ul class="logo_rs">
+        <li><a href="https://www.facebook.com/"  target="_blank"><img src="../images/logo_facebook.png" alt="Logo Facabook"/></a></li>
+        <li><a href="https://www.instagram.com/"  target="_blank"><img src="../images/logo_instagram.png" alt="logo instagram"/></a></li>
+        <li><a href="https://twitter.com/login"  target="_blank"><img src="../images/logo_twitter.png" alt="Logo Twitter"/></a></li>
+        <li><a href="https://www.whatsapp.com/?lang=fr"  target="_blank"><img src="../images/logo_whatsapp.png" alt="Logo WhatsApp"/></a></li>
+        <li><a href="https://fr.linkedin.com/"  target="_blank"><img src="../images/logo_in.png" alt="logo linked-in"/></a></li>
+    </ul>
+</footer>
+<script src="../js/barre_nav.js" type="text/javascript"></script> 
+</body>
+</html>
+

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Produits</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../lPC.css" type="text/css"/>
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"  type="text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"  type="text/css">
+        <script src="https://code.jquery.com/jquery-1.12.4.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js" type="text/javascript"></script>
+        <script src="../js/articles.js" type="text/javascript"></script>
+
+    </head>
+    <body id="produits">
+        <header>
+            <nav class="hambu">
+                <a href="#" onclick="openNav()">
+                    <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                </a>
+            </nav>
+            <img src="../images/le_petit_commerce.png" alt="Logo du Petit Commerce" id='logoLPC'/>
+            <a href='../pages/femmes.html' target='_blank'>
+                <p id='fem'>FEMMES</p></a>
+            <a href='../pages/hommes.html' target='_blank'>
+                <p id='hom'>HOMMES</p></a>
+            <!--<div id='rechercher'></div>-->
+            <form method='post' action="recherche.php" accept-charset="utf-8">
+                <input type="search" name="rech" id="rech" placeholder="Vous recherchez ..." size=30 maxlength="30"/>
+                <button id="loupe" type="submit" class="loupe">
+                    <img src="../images/icone_loupe.png" alt="Icone pour lancer la recherche" id='ico_loupe'/>
+                </button>
+            </form>
+            <!--</div>-->
+            <div id='trois_icones'>
+                <a href="../pages/inscription.html"><img src="../images/icone_compte.png" alt="Icone pour accéder à votre compte" id='ico_compte' title="Icone pour accéder à votre compte"/></a>
+                <img src="../images/icone_ajoupan.png" alt="Icone pour ajouter un article au panier" id='ico_ajoupan' onclick="ajpanier()"/>
+                <img src="../images/icone_panier.png" alt="Icone de votre panier" id='ico_panier' onclick="panierpage()"/>
+            </div>
+            <div id="sideNavigation" class="sidenav">
+                <!--<a href="#" class='menu'>Menu</a>-->
+                <p class="menu" >Menu</p>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+                <button class="dropdown-btn">Femmes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/robes.html" target="_blank">Robes</a>
+                    <a href="../pages/jupes.html" target="_blank">Jupes</a>
+                    <a href="../pages/escarpins.html" target="_blank">Escarpins</a>
+                    <a href="../pages/lunettes.html" target="_blank">Lunettes de soleil</a>
+                    <a href="../pages/sacs.html" target="_blank">Sacs</a>
+                </div>
+                <button class="dropdown-btn">Hommes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/chemises.html" target="_blank">Chemises</a>
+                    <a href="../pages/pantalons.html" target="_blank">Pantalons</a>
+                    <a href="../pages/blousons.html" target="_blank">blousons et Manteaux</a>
+                    <a href="../pages/chapeaux.html" target="_blank">Bonnets, casquettes et chapeaux</a>
+                </div>
+                <button class="dropdown-btn">Divers
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/baskets.html">baskets</a>
+                </div>
+            </div>
+            <fieldset id="choix_lan">
+                <label for="radio_fr">
+                    <input type="radio" checked="checked" name="lan" id="radio_fr" value="1"/>
+                    <img src="../images/icone_fr.png" alt="drapeau Français" id="ico_fr"/>
+                </label>
+                <label for="radio_uk">
+                    <input type="radio" name="lan" id="radio_uk" value="2"/>
+                    <img src="../images/icone_uk.png" alt="drapeau Anglais" id="ico_uk"/>
+                </label>
+            </fieldset>
+        </header>
+
+        <h1>Produits</h1>
+        <main id="pro"></main>
+
+        <button id='ajpanier' onclick="ajpanier(nb)">Ajouter au panier</button>
+        <script src="../js/produits.js"></script>
+
+        <footer>
+            <ul>
+                <li><a href="../pages/mentions_legales.html" target="_blank">Mentions Légales</a></li>
+                <li><a href="../pages/conditions_utilisation.html" target="_blank">Condition d'utilisation</a></li>
+                <li><a href="../pages/politique_cookies.html" target="_blank">Politiques Relative aux Cookies</a></li>
+                <li><a href="../pages/politique_confidential.html" target="_blank">Politiques de confidentialité</a></li>
+                <li><a href="../pages/conditions_promotions.html" target="_blank">Condition des promotions</a></li>
+                <li><a href="../pages/termes_conditions.html" target="_blank">Termes et Conditions</a></li>
+            </ul>
+            <ul>
+                <li><a href="../pages/quisommesnous.html" target="_blank">Qui sommes nous ?</a></li>
+                <li><a href="../pages/ounoustrouver.html" target="_blank">Ou nous trouvez ?</a></li>
+                <li><a href="../pages/actualites.html" target="_blank">Actualités</a></li>
+            </ul>
+            <ul>
+                <li><a href="../pages/contact.html" target="_blank">Contactez-nous</a></li>
+                <li><a href="../pages/recrutement.html"  target="_blank">Nous recrutons !</a></li>
+                <li><a href="../pages/reservation.html" target="_blank">Prenez rendez vous</a></li>
+                <li><a href="../pages/avis.html" target="_blank">Avis</a></li>
+            </ul>
+            <ul class="logo_rs">
+                <li><a href="https://www.facebook.com/"  target="_blank"><img src="../images/logo_facebook.png" alt="Logo Facabook"/></a></li>
+                <li><a href="https://www.instagram.com/"  target="_blank"><img src="../images/logo_instagram.png" alt="logo instagram"/></a></li>
+                <li><a href="https://twitter.com/login"  target="_blank"><img src="../images/logo_twitter.png" alt="Logo Twitter"/></a></li>
+                <li><a href="https://www.whatsapp.com/?lang=fr"  target="_blank"><img src="../images/logo_whatsapp.png" alt="Logo WhatsApp"/></a></li>
+                <li><a href="https://fr.linkedin.com/"  target="_blank"><img src="../images/logo_in.png" alt="logo linked-in"/></a></li>
+            </ul>
+        </footer>
+
+        <script src="../js/ajpanier.js" type="text/javascript"></script>
+        <script src="../js/panier.js" type="text/javascript"></script>
+        <script src="../js/barre_nav.js" type="text/javascript"></script> 
+    </body>
+
+</html>

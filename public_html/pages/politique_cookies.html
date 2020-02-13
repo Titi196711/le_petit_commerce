@@ -1,0 +1,806 @@
+<html>
+    <head>
+        <title>Politiques relative aux cookies</title>
+        <link rel="stylesheet" href="../lPC.css" type="text/css"/>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <header>
+            <nav class="hambu">
+                <a href="#" onclick="openNav()">
+                    <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                </a>
+            </nav>
+            <img src="../images/le_petit_commerce.png" alt="Logo du Petit Commerce" id='logoLPC'/>
+            <a href='../pages/femmes.html' target='_blank'>
+                <p id='fem'>FEMMES</p></a>
+            <a href='../pages/hommes.html' target='_blank'>
+                <p id='hom'>HOMMES</p></a>
+            <!--<div id='rechercher'></div>-->
+            <form method='post' action="recherche.php" accept-charset="utf-8">
+                <input type="search" name="rech" id="rech" placeholder="Vous recherchez ..." size=30 maxlength="30"/>
+                <button id="loupe" type="submit" class="loupe">
+                    <img src="../images/icone_loupe.png" alt="Icone pour lancer la recherche" id='ico_loupe'/>
+                </button>
+            </form>
+            <!--</div>-->
+            <div id='trois_icones'>
+                <a href="../pages/inscription.html"><img src="../images/icone_compte.png" alt="Icone pour accéder à votre compte" id='ico_compte' title="Icone pour accéder à votre compte"/></a>
+                <img src="../images/icone_ajoupan.png" alt="Icone pour ajouter un article au panier" id='ico_ajoupan' onclick="ajpanier()"/>
+                <img src="../images/icone_panier.png" alt="Icone de votre panier" id='ico_panier' onclick="panierpage()"/>
+            </div>
+            <div id="sideNavigation" class="sidenav">
+                <!--<a href="#" class='menu'>Menu</a>-->
+                <p class="menu" >Menu</p>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+                <button class="dropdown-btn">Femmes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/robes.html" target="_blank">Robes</a>
+                    <a href="../pages/jupes.html" target="_blank">Jupes</a>
+                    <a href="../pages/escarpins.html" target="_blank">Escarpins</a>
+                    <a href="../pages/lunettes.html" target="_blank">Lunettes de soleil</a>
+                    <a href="../pages/sacs.html" target="_blank">Sacs</a>
+                </div>
+                <button class="dropdown-btn">Hommes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/chemises.html" target="_blank">Chemises</a>
+                    <a href="../pages/pantalons.html" target="_blank">Pantalons</a>
+                    <a href="../pages/blousons.html" target="_blank">blousons et Manteaux</a>
+                    <a href="../pages/chapeaux.html" target="_blank">Bonnets, casquettes et chapeaux</a>
+                </div>
+                <button class="dropdown-btn">Divers
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/baskets.html">baskets</a>
+                </div>
+            </div>
+            <fieldset id="choix_lan">
+                <label for="radio_fr">
+                    <input type="radio" checked="checked" name="lan" id="radio_fr" value="1"/>
+                    <img src="../images/icone_fr.png" alt="drapeau Français" id="ico_fr"/>
+                </label>
+                <label for="radio_uk">
+                    <input type="radio" name="lan" id="radio_uk" value="2"/>
+                    <img src="../images/icone_uk.png" alt="drapeau Anglais" id="ico_uk"/>
+                </label>
+            </fieldset>
+        </header>
+        <main  id="mentions_legales">
+            <h1>Politiques Relative aux Cookies</h1>
+            <p>
+                La présente politique (la « politique ») établit la manière dont 
+                nous utilisons des cookies sur les sites suivants&nbsp;:&nbsp;
+                <a href="https://www.IFOCOP.co.uk/">
+                    www.IFOCOP.co.uk;
+                </a>
+                <a href="https://www.IFOCOPus.com/">
+                    www.IFOCOPus.com
+                </a>
+                <a href="https://www.IFOCOPau.com/">
+                    www.IFOCOPau.com;
+                </a>
+                <a href="https://www.IFOCOP.eu/">
+                    www.IFOCOP.eu;
+                </a>
+                <a href="https://www.IFOCOPfr.fr/">
+                    www.IFOCOPfr.fr;
+                </a>
+                <a href="https://www.IFOCOP.com/pl">
+                    www.IFOCOP.com/pl;
+                </a>
+                <a href="https://www.IFOCOP.com/de">
+                    www.IFOCOP.com/de;
+                </a>
+                and
+                <a href="https://www.IFOCOP.com/es">
+                    www.IFOCOP.com/es
+                </a>
+                ainsi que dans nos enseignes (les «&nbsp;Magasins&nbsp;»). En 
+                accédant à ces Sites, vous acceptez les terme décrits ci-après dans 
+                cette politique (la «&nbsp;politique&nbsp;»).
+            </p>
+            <p>
+                Missguided Limited, société enregistrée à l'adresse 75 TRAFFORD 
+                WHARF ROAD, MANCHESTER, UNITED KINGDOM, M17 1ES, numéro 
+                d'immatriculation 11 94 000 47 94, ci-après désignée par “nous”, “notre” et 
+                “Missguided, est l'unique propriétaire et exploitant des Sites.
+            </p>
+            <p>
+                Nous nous réservons le droit de modifier cette politique 
+                régulièrement. Les dernières mises à jour de cette politique ont eu lieu
+                le 14 Septembre 2018.
+            </p>
+
+            <h3>
+                utilisation des cookies
+            </h3>
+            <p>
+                Les Sites et Magasins se servent de cookies pour vous distinguer des
+                autres utilisateurs des Sites et Magasins. Cette pratique nous aide à 
+                vous fournir la meilleure expérience de navigation possible sur les 
+                Sites et Magasins et nous permet également d'améliorer nos services.
+
+            </p>
+            <p>
+                Un cookie est un petit fichier contenant un code alphanumérique et 
+                sauvegardé dans votre navigateur ou sur le disque dur de votre 
+                ordinateur, si vous y consentez. Les cookies contiennent des 
+                informations qui sont ensuite transférées sur votre disque dur. 
+            </p>
+            <p>
+                Nous utilisons les cookies suivants:
+            </p>
+            <ol class="decimal">
+                <li>
+                    <strong>
+                        Cookies strictement nécessaires.
+                    </strong>
+                    Ce sont les cookies requis pour faire fonctionner les Sites. Il 
+                    s'agit par exemple de ceux qui vous permettent de vous connecter aux 
+                    parties sécurisées du Site ou d'utiliser un panier.
+                </li>
+                <li>
+                    <strong>
+                        Cookies analytiques/mesure de performances.
+                    </strong>
+                    Ceux-ci nous permettent de mesurer le nombre de visiteurs de nos
+                    Sites et d'analyser la manière dont ils les utilisent. Nous pouvons 
+                    ainsi améliorer les performances des Sites en nous assurant par exemple 
+                    que les utilisateurs trouvent aisément ce qu'ils cherchent. 
+                </li>
+                <li>
+                    <strong>
+                        Cookies de fonctionnalité.
+                    </strong>
+                    Ils nous permettent de vous reconnaître lorsque vous revenez 
+                    naviguer sur nos Sites. Ceci nous aide à personnaliser notre contenu, à 
+                    vous appeler par votre nom et à nous souvenir de vos préférences (par 
+                    exemple, votre choix de langue ou de région). 
+                </li>
+                <li>
+                    <strong>
+                        Cookies de ciblage.
+                    </strong>
+                    Ces cookies enregistrent vos visites sur les Sites, les pages 
+                    que vous avez consultées et les liens sur lesquels vous avez cliqué. 
+                    Nous utiliserons ces informations pour cibler les Sites et les 
+                    publicités qu'ils contiennent à vos goûts et intérêts personnels. Nous 
+                    pouvons également communiquer ces informations à des tierces parties 
+                    pour le même objectif.
+                </li>
+            </ol>
+            <p>
+                Les cookies individuels et les raisons pour lesquelles nous les 
+                utilisons sont décrits plus précisément dans le tableau ci-dessous :
+            </p>
+            <table class="data-table data-table--responsive">
+                <thead>
+                    <tr>
+                        <th>
+                            Type de cookie
+                        </th>
+                        <th>
+                            Objectifs
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Google Analytics
+                        </td>
+                        <td>
+                            Ce cookie sert à recueillir des informations sur la manière 
+                            dont les visiteurs utilisent nos Sites. Il collecte des informations 
+                            anonymes comme par exemple le nombre de visiteurs, la manière dont ils 
+                            sont arrivés sur les Sites et les pages qu'ils ont consultées. Nous 
+                            utilisons ces informations pour en faire des comptes-rendus et améliorer
+                            nos performances.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            QueueIT
+                        </td>
+                        <td>
+                            Ce cookie nous sert à réguler le trafic sur nos Sites dans 
+                            un ordre logique du «&nbsp;premier arrivé, premier servi&nbsp;» 
+                            notamment lors de limites inattendues et importantes de chargement sur 
+                            ces derniers.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            _utma
+                        </td>
+                        <td>
+                            Ce programme sert à différencier utilisateurs et sessions. 
+                            Le cookie n'est créé que si la bibliothèque javascript s'exécute et ne 
+                            trouve pas de cookie __utma préexistant. Il se met ensuite à jour à 
+                            chaque fois que des données sont envoyées à Google Analytics.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            _utmb
+                            <br>
+                            _utmc
+                        </td>
+                        <td>
+                            <p>
+                                Ces cookies fonctionnent en tandem et servent à calculer
+                                la durée des visites. Le cookie Google __utmb note l'heure d'arrivée 
+                                exacte, puis le cookie Google __utmc enregistre l'heure de sortie 
+                                précise de l'utilisateur.
+                            </p>
+                            <p>
+                                Comme __utmb compte le nombre d'arrivées, il expire à la
+                                fin de la session, c'est à dire lorsque l'utilisateur quitte la page. 
+                                Le cookie Google __utmc n'expire qu'à la fin d'un délai de 30 minutes. 
+                                Google __utmc ne peut indiquer si votre navigateur ou session est fermé.
+                                Ainsi, s'il n'enregistre pas de visite en l'espace de 30 minutes, il 
+                                expire.
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            _utmz
+                        </td>
+                        <td>
+                            Ce cookie enregistre la source du trafic, indiquant ainsi la
+                            manière dont les utilisateurs rejoignent nos Sites. Il est créé lorsque
+                            la bibliothèque javascript s'exécute et il se met à jour 
+                            automatiquement à chaque nouvelle donnée envoyée à Google Analytics.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <dl>
+                                <dt>
+                                    Google AdWords
+                                </dt>
+                                <dd>
+                                    ld
+                                    <br>
+                                    _drt
+                                </dd>
+                            </dl>
+                        </td>
+                        <td>
+                            <p>
+                                Ce cookie sert à suivre les visites et commandes 
+                                provenant du réseau de recherche et de display Google. Ce cookie est 
+                                activé lorsqu'un utilisateur atteint le site et passe commande après 
+                                avoir cliqué sur les publicités sponsorisées par Google, et il est 
+                                désactivé par la page de confirmation.
+                            </p>
+                            <p>
+                                Pour plus d'informations : 
+                                <a href="http://www.google.com/ads/preferences/?hl=en" target="_blank" rel="noopener">
+                                    http://www.google.com/ads/preferences/?hl=en
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <dl>
+                                <dt>
+                                    Optimizely
+                                </dt>
+                                <dd>
+                                    optimizelyEndUserId
+                                    and
+                                    optimizelyRedirectData
+                                </dd>
+                            </dl>
+                        </td>
+                        <td>
+                            <p>
+                                Ce cookie teste les sites et les adapte en vue 
+                                d'améliorer l'expérience du client. Il stocke un identifiant anonyme 
+                                ainsi que d'autres informations sur la session courante. Nous utilisons 
+                                ces informations pour créer de nouvelles expériences clients et adapter,
+                                améliorer les expériences existantes. 
+                            </p>
+                            <p>
+                                Pour plus d'informations :&nbsp;
+                                <a href="https://www.optimizely.com/" target="_blank" rel="noopener">
+                                    https://www.optimizely.com/
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Google Tag Manager
+                        </td>
+                        <td>
+                            <p>
+                                Ces cookies nous permettent de recueillir des 
+                                informations sur la manière dont les visiteurs utilisent nos Sites. Il 
+                                ne collecte que des informations anonymes, comme par exemple le nombre 
+                                de visites sur les sites, d'où proviennent les visiteurs, et quelles 
+                                pages ils ont consultées.
+                            </p>
+                            <p>Pour plus d'informations :
+                                <a href="http://www.google.co.uk/tagmanager" target="_blank" rel="noopener">
+                                    http://www.google.co.uk/tagmanager
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Missguided:
+                        </td>
+                        <td>
+                            Nous nous servons de cookies de session afin de mémoriser 
+                            vos informations de connexion, vos préférences (par exemple votre 
+                            devise) et les articles que vous avez ajoutés à votre panier. Si vous 
+                            désactivez ces cookies, vous perdrez certaines fonctionnalités du site.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            FRONTEND
+                        </td>
+                        <td>
+                            Ce cookie garde votre identifiant de session sur le serveur
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CUSTOMER
+                        </td>
+                        <td>
+                            Ce cookie est une version cryptée de l'identifiant client dans la boutique
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CUSTOMER_INFO
+                        </td>
+                        <td>
+                            Ce cookie est une version cryptée du groupe client auquel le client appartient.
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CUSTOMER_AUTH
+                        </td>
+                        <td>
+                            Ce cookie nous indique si vous êtes actuellement identifié sur la boutique</td>
+                    </tr>
+                    <tr>
+                        <td>
+                            NO_CACHE
+                        </td>
+                        <td>
+                            Ce cookie indique si le site est autorisé à utiliser le cache
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            WISHLIST
+                        </td>
+                        <td>
+                            Ceci est une liste cryptée des produits que vous avez ajoutés à votre liste d'envies
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            LAST_CATEGORY
+                        </td>
+                        <td>
+                            Ce cookie nous indique la dernière fois que vous avez visité une catégorie
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CATEGORY ID
+                        </td>
+                        <td>
+                            Ce cookie mémorise l'identifiant de la catégorie
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            VIEWED_PRODUCT_IDS
+                        </td>
+                        <td>
+                            Ce cookie nous indique les produits que vous avez récemment consultés
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            CATEGORY_INFO
+                        </td>
+                        <td>
+                            Ce cookie mémorise les informations de catégorie afin d'afficher les pages plus rapidement
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <h3>
+                cookies tiers
+            </h3>
+            <p>
+                Veuillez noter que certaines parties tierces (notamment, mais sans 
+                s'y limiter, des publicitaires ou services d'analyses de trafic web) 
+                peuvent également utiliser des cookies sur lesquels nous n'avons aucun 
+                contrôle. Nous vous suggérons de consulter les sites internet de ces 
+                tiers afin de vous renseigner sur les cookies qu'ils utilisent et leur 
+                gestion. 
+            </p>
+            <p>
+                La liste suivante présente certains des partenaires susceptibles d'utiliser des cookies sur votre matériel :
+            </p>
+            <table class="data-table data-table--responsive">
+                <thead>
+                    <tr>
+                        <th>
+                            Tiers 
+                        </th>
+                        <th>
+                            A quoi servent leurs cookies 
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>
+                            Intelligent Reach
+                        </td>
+                        <td>
+                            <p>
+                                Intelligent Reach est un moteur de gestion du flux de 
+                                données qui recueille des informations non personnelles relatives à ce 
+                                que vous consultez sur les Sites, et ce à des fins d'analyse.
+                            </p>
+                            <p>
+                                Pour plus d'informations :&nbsp;
+                                <a href="http://www.intelligentreach.com/privacy-cookies" target="_blank" rel="noopener">
+                                    http://www.intelligentreach.com/privacy-cookies
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Criteo
+                        </td>
+                        <td>
+                            <p>
+                                Criteo utilise des cookies pour nous permettre de 
+                                réengager certains clients potentiels ayant quitté les Sites à l'aide de
+                                bannières dynamiques contenant les produits les plus pertinents. Ces 
+                                recommandations personnalisées sont créées en temps réel pour chaque 
+                                client individuel.
+                            </p>
+                            <p>
+                                Pour plus d'informations :
+                                <a href="http://www.criteo.com/" target="_blank" rel="noopener">
+                                    http://www.criteo.com
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Marin
+                        </td>
+                        <td>
+                            <p>
+                                Marin utilise des cookies pour nous aider à comprendre 
+                                de quelle manière nos Sites sont utilisés afin que nous puissions 
+                                mesurer et améliorer leur fonctionnement. Par exemple, ils nous 
+                                indiquent quelles pages sont les plus populaires ou les moins 
+                                recherchées. Ils comptabilisent le nombre de visiteurs, la durée moyenne
+                                des visites et la façon dont ils ont trouvé le site. Ceci nous permet 
+                                d'établir ce qui fonctionne bien et ce que nous devons modifier, et de 
+                                nous assurer que les pages se chargent rapidement et s'affichent 
+                                correctement.
+
+                            </p>
+                            <p>
+                                Les informations recueillies par ces cookies sont 
+                                strictement anonymes et aucunement liées à vos données personnelles.
+                            </p>
+                            <p>Pour plus d'informations :&nbsp;
+                                <a href="http://www.marinsoftware.co.uk/" target="_blank" rel="noopener">
+                                    http://www.marinsoftware.co.uk
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            SkyGlue
+                        </td>
+                        <td>
+                            <p>
+                                Skyglue utilise des cookies pour recueillir des 
+                                informations sur la manière dont nos Sites sont utilisés. Toutes les 
+                                informations recueillies sont strictement anonymes et concernent par 
+                                exemple le nombre de visiteurs des Sites, la façon dont ils les ont 
+                                trouvés ou les pages les plus consultées.
+                            </p>
+                            <p>
+                                Pour plus d'informations :
+                                <a href="http://www.skyglue.co.uk/" target="_blank" rel="noopener">
+                                    http://www.skyglue.co.uk
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Twitter
+                        </td>
+                        <td>
+                            <p>
+                                Twitter se sert de cookies pour mémoriser de manière 
+                                anonyme qu'un utilisateur a cliqué sur un lien publicitaire Twitter 
+                                menant au site Missguided.
+                            </p>
+                            <p>
+                                Pour plus d’informations:
+                                <a href="https://twitter.com/privacy" target="_blank" rel="noopener">
+                                    https://twitter.com/privacy
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Facebook
+                        </td>
+                        <td>
+                            <p>
+                                Facebook se sert de cookies pour mémoriser de manière 
+                                anonyme qu'un utilisateur a cliqué sur un lien publicitaire Facebook 
+                                menant au site Missguided.
+                            </p>
+                            <p>
+                                Pour plus d'informations :&nbsp;
+                                <a href="https://en-gb.facebook.com/help/cookies" target="_blank" rel="noopener">
+                                    https://en-gb.facebook.com/help/cookies
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Anwin
+                        </td>
+                        <td>
+                            <p>
+                                Awin se sert de cookies pour mémoriser de manière 
+                                anonyme qu'un utilisateur a cliqué sur un lien publicitaire Awin menant 
+                                au site Missguided.
+                            </p>
+                            <p>
+                                Pour plus d'informations :&nbsp;
+                                <a href="https://www.awin.com/gb" target="_blank" rel="noopener">
+                                    https://www.awin.com/gb
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Struq
+                        </td>
+                        <td>
+                            <p>
+                                Les cookies de Struq recueillent des données sur la 
+                                navigation, par exemple les produits que vous avez consultés. Ces 
+                                données peuvent ensuite être utilisées par d'autres sites du réseau 
+                                Struq afin de proposer des publicités contenant ces mêmes produits ou 
+                                d'autres similaires. Ces publicités contiendront toujours un lien vers 
+                                la politique de confidentialité de Struq.
+                            </p>
+                            <p>
+                                Pour plus d'informations :&nbsp;
+                                <a href="http://www.struq.com/cookie-and-privacy-policy" target="_blank" rel="noopener">
+                                    http://www.struq.com/cookie-and-privacy-policy
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Double Click
+                        </td>
+                        <td>
+                            <p>
+                                Ces cookies indiquent à Doubleclick combien de fois une 
+                                publicité vous a été présentée. Ils ne peuvent pas trouver 
+                                d'informations personnelles vous concernant. 
+                            </p>
+                            <p>
+                                Pour plus d'informations :&nbsp;
+                                <a href="https://www.google.com/settings/ads?hl=en" target="https://www.google.com/settings/ads?hl=en">
+                                    https://www.google.com/settings/ads?hl=en
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Student Beans
+                        </td>
+                        <td>
+                            <p>
+                                Student Beans utilise des cookies pour nous permettre 
+                                d’identifier qu’un utilisateur provient de leur site. Ces cookies 
+                                recueillent des informations lors d’une transaction passée par un 
+                                étudiant utilisant son code via Unidays.
+                            </p>
+                            <p>
+                                FPour plus d'informations :&nbsp;
+                                <a href="https://www.studentbeans.com/fr/info/privacy" target="_blank" rel="noopener">
+                                    https://www.studentbeans.com/fr/info/privacy
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            Unidays
+                        </td>
+                        <td>
+                            <p>
+                                Utilisez les cookies afin d’identifier quand un utilisateur 
+                                soit venu de votre site. Les cookies amassent des informations au point 
+                                de la commande pour identifier si une commande étudiant a été réalisée.
+                            </p>
+                            <p>
+                                For further information:
+                                <a href="https://www.myunidays.com/GB/en-GB/privacy-policy" target="_blank" rel="noopener">
+                                    https://www.myunidays.com/GB/en-GB/privacy-policy
+                                </a>
+                            </p>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <br>
+            <h3>
+                gestion des cookies
+            </h3>
+            <p>
+                Vous pouvez bloquer les cookies en activant le paramètre de votre 
+                navigateur qui les empêche d'être enregistrés sur votre ordinateur sans 
+                votre accord. Cependant, bloquer tous les cookies (y compris les cookies
+                nécessaires) à l'aide de votre navigateur pourra empêcher certaines 
+                fonctionnalités des Sites de fonctionner.
+            </p>
+            <p>
+                Si vous ne connaissez pas le type et la version du navigateur que vous utilisez pour vous connecter à Internet :
+                <br>
+                <strong>
+                    Pour les PC : 
+                </strong>
+                cliquez sur 'Aide' en haut de la fenêtre de votre navigateur et sélectionnez l'option 'À propos'
+                <br>
+                <strong>
+                    Pour les MAC : 
+                </strong>
+                une fois la fenêtre du navigateur ouverte, cliquez sur le menu Apple et sélectionnez l'option 'À propos'
+            </p>
+            <h3>
+                activer les cookies
+            </h3>
+            <p>
+                Pour activer les cookies, suivez les étapes suivantes suivant votre navigateur :
+            </p>
+            <p>
+                SAFARI SUR OSX
+            </p>
+            <ol class="decimal">
+                <li>
+                    Cliquez sur 'Safari' en haut de la fenêtre de votre navigateur et choisissez ‘Préférences'
+                </li>
+                <li>
+                    Cliquez sur 'Sécurité', puis sur 'Accepter les cookies' ;
+                </li>
+                <li>
+                    Choisissez ‘Provenant seulement des sites que je visite'.
+                </li>
+            </ol>
+            <p>
+                MOZILLA FIREFOX SUR OSX
+            </p>
+            <ol class="decimal">
+                <li>
+                    Cliquez sur ‘Mozilla' en haut de la fenêtre de votre navigateur et choisissez ‘Préférences' ;
+                </li>
+                <li>
+                    Faites défiler jusqu'à ce que 'Cookies' apparaisse dans ‘Confidentialité et sécurité' ;
+
+                </li>
+                <li>
+                    Choisissez ‘Autoriser les cookies uniquement pour le site web d'origine'.
+                </li>
+            </ol>
+            <p>
+                OPERA
+            </p>
+            <ol class="decimal">
+                <li>
+                    Cliquez sur ‘Menu' en haut de la fenêtre de votre navigateur et choisissez ‘Paramètres' ;
+                </li>
+                <li>
+                    Puis choisissez ‘Préférences' et sélectionnez l'onglet ‘Avancées'
+                </li>
+                <li>
+                    Choisissez ensuite l'option ‘Accepter les cookies'.
+                </li>
+            </ol>
+            <p>
+                Pour en apprendre davantage sur les cookies et leur gestion (notamment comment les bloquer), veuillez visiter
+                <a href="http://aboutcookies.org/" target="_blank" rel="noopener">
+                    aboutcookies.org
+                </a>
+                s'ouvre dans une fenêtre séparée). Veuillez noter que nous ne sommes pas responsables du contenu de sites externes.
+            </p>
+
+            <h3>
+                plus d'informations
+            </h3>
+            <p>
+                Si vous désirez en savoir davantage sur les cookies que nous 
+                utilisons, veuillez contacter le Service Client par email 
+                à&nbsp;serviceclient@IFOCOPfr.fr&nbsp;ou par courrier au 14 Avenue Gustave Eiffel 78180 Montigny le Bretonneux
+            </p></div>                
+    </main>
+    <footer>
+        <ul>
+            <li><a href="../pages/mentions_legales.html" target="_blank">Mentions Légales</a></li>
+            <li><a href="../pages/conditions_utilisation.html" target="_blank">Condition d'utilisation</a></li>
+            <li><a href="../pages/politique_cookies.html" target="_blank">Politiques Relative aux Cookies</a></li>
+            <li><a href="../pages/politique_confidential.html" target="_blank">Politiques de confidentialité</a></li>
+            <li><a href="../pages/conditions_promotions.html" target="_blank">Condition des promotions</a></li>
+            <li><a href="../pages/termes_conditions.html" target="_blank">Termes et Conditions</a></li>
+        </ul>
+        <ul>
+            <li><a href="../pages/quisommesnous.html" target="_blank">Qui sommes nous ?</a></li>
+            <li><a href="../pages/ounoustrouver.html" target="_blank">Ou nous trouvez ?</a></li>
+            <li><a href="../pages/actualites.html" target="_blank">Actualités</a></li>
+        </ul>
+        <ul>
+            <li><a href="../pages/contact.html" target="_blank">Contactez-nous</a></li>
+            <li><a href="../pages/recrutement.html"  target="_blank">Nous recrutons !</a></li>
+            <li><a href="../pages/reservation.html" target="_blank">Prenez rendez vous</a></li>
+            <li><a href="../pages/avis.html" target="_blank">Avis</a></li>
+        </ul>
+        <ul class="logo_rs">
+            <li><a href="https://www.facebook.com/"  target="_blank"><img src="../images/logo_facebook.png" alt="Logo Facabook"/></a></li>
+            <li><a href="https://www.instagram.com/"  target="_blank"><img src="../images/logo_instagram.png" alt="logo instagram"/></a></li>
+            <li><a href="https://twitter.com/login"  target="_blank"><img src="../images/logo_twitter.png" alt="Logo Twitter"/></a></li>
+            <li><a href="https://www.whatsapp.com/?lang=fr"  target="_blank"><img src="../images/logo_whatsapp.png" alt="Logo WhatsApp"/></a></li>
+            <li><a href="https://fr.linkedin.com/"  target="_blank"><img src="../images/logo_in.png" alt="logo linked-in"/></a></li>
+        </ul>
+    </footer>
+
+    <script src="../js/barre_nav.js" type="text/javascript"></script> 
+
+</body>
+</html>

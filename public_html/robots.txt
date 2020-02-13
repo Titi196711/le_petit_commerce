@@ -1,0 +1,3 @@
+User-Agent: *
+Disallow: /stats/
+Crawl-delay: 30

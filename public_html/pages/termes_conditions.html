@@ -1,0 +1,455 @@
+<html lang="fr">
+    <head>
+        <title>Termes et Conditions</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../lPC.css" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="hambu">
+                <a href="#" onclick="openNav()">
+                    <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                </a>
+            </nav>
+            <img src="../images/le_petit_commerce.png" alt="Logo du Petit Commerce" id='logoLPC'/>
+            <a href='../pages/femmes.html' target='_blank'>
+                <p id='fem'>FEMMES</p></a>
+            <a href='../pages/hommes.html' target='_blank'>
+                <p id='hom'>HOMMES</p></a>
+            <!--<div id='rechercher'></div>-->
+            <form method='post' action="recherche.php" accept-charset="utf-8">
+                <input type="search" name="rech" id="rech" placeholder="Vous recherchez ..." size=30 maxlength="30"/>
+                <button id="loupe" type="submit" class="loupe">
+                    <img src="../images/icone_loupe.png" alt="Icone pour lancer la recherche" id='ico_loupe'/>
+                </button>
+            </form>
+            <!--</div>-->
+            <div id='trois_icones'>
+                <a href="../pages/inscription.html"><img src="../images/icone_compte.png" alt="Icone pour accéder à votre compte" id='ico_compte' title="Icone pour accéder à votre compte"/></a>
+                <img src="../images/icone_ajoupan.png" alt="Icone pour ajouter un article au panier" id='ico_ajoupan' onclick="ajpanier()"/>
+                <img src="../images/icone_panier.png" alt="Icone de votre panier" id='ico_panier' onclick="panierpage()"/>
+            </div>
+            <div id="sideNavigation" class="sidenav">
+                <!--<a href="#" class='menu'>Menu</a>-->
+                <p class="menu" >Menu</p>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+                <button class="dropdown-btn">Femmes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/robes.html" target="_blank">Robes</a>
+                    <a href="../pages/jupes.html" target="_blank">Jupes</a>
+                    <a href="../pages/escarpins.html" target="_blank">Escarpins</a>
+                    <a href="../pages/lunettes.html" target="_blank">Lunettes de soleil</a>
+                    <a href="../pages/sacs.html" target="_blank">Sacs</a>
+                </div>
+                <button class="dropdown-btn">Hommes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/chemises.html" target="_blank">Chemises</a>
+                    <a href="../pages/pantalons.html" target="_blank">Pantalons</a>
+                    <a href="../pages/blousons.html" target="_blank">blousons et Manteaux</a>
+                    <a href="../pages/chapeaux.html" target="_blank">Bonnets, casquettes et chapeaux</a>
+                </div>
+                <button class="dropdown-btn">Divers
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/baskets.html">baskets</a>
+                </div>
+            </div>
+            <fieldset id="choix_lan">
+                <label for="radio_fr">
+                    <input type="radio" checked="checked" name="lan" id="radio_fr" value="1"/>
+                    <img src="../images/icone_fr.png" alt="drapeau Français" id="ico_fr"/>
+                </label>
+                <label for="radio_uk">
+                    <input type="radio" name="lan" id="radio_uk" value="2"/>
+                    <img src="../images/icone_uk.png" alt="drapeau Anglais" id="ico_uk"/>
+                </label>
+            </fieldset>
+        </header>
+
+        <main id="mentions_legales">
+            <h1>Termes et Conditions</h1>
+
+
+            <p>Nous sommes IFOCOP Limited, une société immatriculée en FRANCE
+                sous le numéro 11 94 000 47 94 (« nous », «
+                notre » et/ou «IFOCOP ») et nous exploitons les sites suivants :
+                <a href="https://www.IFOCOP.co.uk/">
+                    www.IFOCOP.co.uk;
+                </a>
+                <a href="https://www.IFOCOPus.com/">
+                    www.IFOCOPus.com
+                </a>
+                <a href="https://www.IFOCOPau.com/">
+                    www.IFOCOPau.com;
+                </a>
+                <a href="https://www.IFOCOP.eu/">
+                    www.IFOCOP.eu;
+                </a>
+                <a href="https://www.IFOCOPfr.fr/">
+                    www.IFOCOPfr.fr;
+                </a>
+                <a href="https://www.IFOCOP.com/pl">
+                    www.IFOCOP.com/pl;
+                </a>
+                <a href="https://www.IFOCOP.com/de">
+                    www.IFOCOP.com/de;
+                </a>
+                et
+                <a href="https://www.IFOCOP.com/es">
+                    www.IFOCOP.com/es
+                </a>
+                (les « Sites »).
+            </p>
+            <p>L'adresse de notre siège social et de notre bureau de négociations est :
+                14 Avenue Gustave Eiffel 78180 Montigny le Bretonneux.</p>
+            <p>Vous trouverez sur cette page les terme et conditions légales (« terme »)
+                régissant la vente d'articles sur nos Sites (« Articles »). Veuillez
+                noter que ces terme ne s'appliquent que sur l'achat d'Articles sur nos
+                Sites. L'achat de produits IFOCOP partout ailleurs sera régi par les terme
+                et conditions de la source ou du lieu d'achat. Veuillez noter que les offres et
+                promotions valables sur nos Sites ne seront pas nécessairement valables sur un autre
+                site, et vice versa. </p>
+            <p>Veuillez lire attentivement ces terme et conditions et assurez-vous de bien les comprendre
+                avant de passer commande sur nos Sites. Avant de passer commande, vous devrez confirmer que
+                vous acceptez nos conditions. En passant votre commande, vous affirmez consentir à
+                ces terme et conditions. </p>
+            <p>Nous vous recommandons d'imprimer une copie de nos terme et conditions ou de les
+                enregistrer sur votre ordinateur pour pouvoir vous y référer dans l'avenir.</p>
+            <p>Nous pouvons modifier ces terme à tout moment. Avant de passer commande, veuillez vérifier
+                ce texte pour vous assurer de bien comprendre ce qui s'applique à ce moment.</p>
+            <p>Nous nous réservons la possibilité de modifier ces terme à tout moment.
+                La dernière mise à jour a eu lieu le 27 mai 2015.</p>
+            <h3>Comment le contrat est formé entre vous et nous</h3>
+            <p>Vous serez guidé(e) tout au long de la procédure pour passer votre commande.
+                Vous pouvez changer les détails de votre commande à tout moment avant de
+                finaliser l'achat.</p>
+            <p>Prenez le temps de vérifier les détails de votre commande régulièrement
+                et assurez-vous qu'ils soient corrects avant de finaliser votre commande. Une fois le
+                paiement confirmé, vous ne pourrez plus modifier votre commande.</p>
+            <p>Une fois votre commande passée, vous recevrez un email de notre part vous confirmant
+                que nous avons bien reçu votre commande. Un deuxième email vous sera envoyé
+                lors de l'envoi de votre commande.</p>
+            <p>Nos Articles peuvent s'acheter dans la limite des stocks disponibles. Comme il y'a
+                un délai entre le moment où est passée la commande et le moment où
+                elle est traitée, le nombre d'articles disponibles peut parfois changer. Si un
+                Article que vous avez commandé se trouve en rupture de stock, nous vous en tiendrons
+                informé-e dès que possible et procèderons au remboursement intégral
+                de la commande si nécessaire.</p>
+            <p>Nous nous réservons le droit de refuser une commande si l'Article que vous
+                souhaitiez commander n'est pas disponible ou en rupture de stock, si nous ne parvenons
+                pas à obtenir une autorisation de paiement, si nous avons fait erreur dans les
+                informations produit indiquées (notamment au niveau du prix ou d'une offre
+                promotionnelle) ou si nous suspectons une activité frauduleuse.</p>
+            <p>Si nous ne sommes pas en mesure de vous envoyer un Article pour les raisons indiquées
+                ci-dessus, nous vous enverrons un email pour vous en informer et nous vous rembourserons la
+                totalité du paiement, frais de livraison compris, le plus rapidement possible.</p>
+            <h3>Articles sur le site</h3>
+            <p>Les images des Articles sur les Sites sont présentées à titre d'illustration
+                uniquement. Bien que nous nous efforcions de refléter au mieux la couleur des
+                produits, nous ne pouvons pas garantir que l'affichage des couleurs sur votre écran
+                soit exact. Vos Articles pourront légèrement différer des photographies
+                fournies.</p>
+            <p>Toutes les tailles et mesures sont approximatives, mais nous faisons attention à ce qu'elles
+                soient aussi précises que possible. </p>
+            <p>Nous prenons soin de fournir des renseignements, descriptions et prix exacts pour tous nos
+                Articles. Nous nous réservons toutefois le droit de refuser toute commande pour
+                laquelle les informations d'un Article sont incorrectes, notamment, mais sans s'y
+                limiter, son prix et ses promotions.</p>
+            <p>Nos Articles sont vendus pour un usage domestique uniquement. Veuillez nous contacter pour
+                plus d'informations si vous souhaitez les utiliser à des fins publiques ou
+                commerciales.</p>
+            <p>Nos Articles ne sont pas destinés aux personnes de moins de 16 ans, nous vous invitons
+                donc à être vigilant(e) lorsque vous achetez des Articles pour des personnes en
+                dessous de cette tranche d'âge.</p>
+            <p>Nous faisons notre possible pour que les prix des Articles soient exacts au moment où
+                les informations sont indiquées sur les Sites.</p>
+            <p>Les prix de nos Articles peuvent changer à tout moment sans préavis. Ces
+                changements ne seront pas appliqués aux commandes déjà passées.</p>
+            <p>Le prix d'un article inclut la TVA (ou taxes similaires) (s'il y a lieu) au taux en
+                cours s'appliquant à nos activités de détaillant.</p>
+            <p>Les prix indiqués sur nos Sites sont uniquement valables pour les Articles achetés
+                sur nos Sites et non sur aucune autre source.</p>
+            <p>Le prix d'un Article n'inclut ni les frais de livraison ni les frais de
+                retour éventuels. Les détails concernant les frais de livraison vous seront
+                indiqués lors du traitement de votre commande. Vous pouvez également consulter
+                le lien suivant pour voir nos options de livraison et prendre connaissance de nos conditions
+                de retours : <a href="https://www.IFOCOPfr.fr/help#tab4">https://www.IFOCOPfr.fr/help#tab4</a>.
+            </p>
+            <p>Nous faisons de notre mieux pour que les renseignements sur nos Sites (y compris les
+                descriptions des Articles et services associés tels que l'expédition, les
+                conditions de paiement, les offres promotionnelles et les délais de livraison) soient
+                exacts. Cependant il est possible que nos Sites contiennent des erreurs typographiques ou
+                des inexactitudes et qu'ils ne soient pas complets ou corrects. Nous nous réservons
+                le droit de corriger n'importe quelle erreur, inexactitude ou oubli et de modifier ou
+                mettre à jour des informations sans préavis. Si cela se produit après
+                que vous ayez passé votre commande, nous vous tiendrons informé(e) par email d'un
+                quelconque impact que cela aura sur votre commande. Pour cette raison, nous nous réservons
+                le droit de refuser les commandes passées sur la base d'informations incorrectes
+                ou imprécises sur les Sites. </p>
+            <h3>Paiement</h3>
+            <p>Vous pouvez payer en utilisant les méthodes suivantes : cartes bancaires ou de crédit
+                Mastercard et Visa, cartes Maestro, Delta, Solo ou Electron, American Express et PayPal.</p>
+            <p>Vous pouvez payer dans les devises suivantes : livre sterling, dollar américain,
+                dollar canadien, dollar australien, dollar néo-zélandais, euro, couronne
+                danoise, couronne suédoise, couronne norvégienne, dollar de Hong Kong, dollar
+                de Singapour et franc suisse.</p>
+            <p>Nous proposons les services “Verified by Visa“ et “MasterCard SecureCode” pour vous garantir
+                des achats plus sûrs lorsque vous utilisez votre carte bancaire. Vous pouvez utiliser
+                ce service au moment du paiement ou contacter directement votre banque. Il s'agit d'une
+                procédure de sécurité à inscription unique et vous pourrez
+                utiliser le même mot de passe lors de vos prochaines commandes avec nous. Veuillez
+                noter que selon l'émetteur de votre carte bancaire, il se peut que nous ne
+                puissions pas traiter votre commande si vous n'êtes pas connecté(e), et
+                que vous deviez utiliser une méthode de paiement différente pour compléter
+                votre achat.</p>
+            <p>Tous les moyens de paiement sont soumis à des contrôles de validation et d'autorisation
+                par la société émettrice. Si l'émetteur de votre carte de
+                crédit refuse d'autoriser le paiement, vous en serez informé(e) dès
+                que possible. </p>
+            <p>Il se peut que nous effectuions des enquêtes de solvabilité auprès d'agences
+                afin de vérifier votre identité et les informations personnelles indiquées
+                lors de votre commande. Pour ce faire, les agences devront vérifier vos informations
+                personnelles dans n'importe quelle base de données (publique ou autre). Elles
+                pourront également réutiliser vos informations dans le futur afin d'aider
+                d'autres sociétés à effectuer leurs propres vérifications.
+                Nous pouvons aussi utiliser vos informations personnelles dans le cadre de nos efforts de prévention
+                et de détection de la fraude. Passer commande signifie que vous acceptez ces
+                conditions.</p>
+            <p>Tous les articles commandés restent notre propriété jusqu'au
+                paiement intégral de votre commande.</p>
+            <h3>Livraison</h3>
+            <p>Plusieurs options de livraison vous seront proposées avant de passer votre commande.
+                Ces options diffèrent selon l'endroit d'où vous placez votre
+                commande. Pour plus de détails sur les livraisons, veuillez consulter le lien adéquat
+                :</p>
+            <ul>
+                <li>FR - <a href="https://www.IFOCOPfr.fr/delivery_explained">www.IFOCOPfr.fr/</a></li>
+                <li>UK - <a href="https://www.IFOCOP.co.uk/delivery_explained">www.IFOCOP.co.uk</a></li>
+                <li>Republic of Ireland - <a href="https://www.IFOCOP.eu/delivery_explained">www.IFOCOP.eu</a></li>
+                <li>USA/Canada - <a href="https://www.IFOCOPus.com/delivery_explained">www.IFOCOPus.com</a></li>
+                <li>Europe - <a href="https://www.IFOCOP.eu/delivery_explained">www.IFOCOP.eu</a></li>
+                <li>Australia - <a href="https://www.IFOCOPau.com/delivery_explained">www.IFOCOPau.com</a></li>
+                <li>Reste du monde - <a href="https://www.IFOCOP.co.uk/delivery_explained">www.IFOCOP.co.uk</a></li>
+            </ul>
+            <p>Les frais de livraison seront appliqués en plus des prix indiqués sur les
+                Articles que vous souhaitez acheter. Les frais de livraison diffèrent selon l'option
+                que vous aurez choisie. </p>
+            <p>Veuillez noter qu'en plus du prix des Articles et des frais de 
+                livraison de votre commande, votre pays de résidence pourra vous 
+                demander de payer des frais de douanes et d'importation. Pour plus 
+                d'informations, veuillez contacter votre bureau local de douanes et vous
+                renseigner quant aux droits et taxes applicables avant de placer votre 
+                commande. Ces taxes et frais de douanes ne nous sont pas imputables et 
+                nous n'en sommes pas responsables. Si vous refusez de payer ces taxes ou
+                que vous êtes dans l’incapacité de récupérer votre commande et que 
+                cette dernière nous est alors retournée, nous vous demanderons de payer 
+                tous les frais encourus.</p>
+            <p>Vous devez nous fournir une adresse de livraison complète et exacte. Afin d'éviter
+                toute confusion, vous devez indiquer l'adresse de livraison ainsi que le nom du
+                destinataire. Nous ne pouvons être tenus responsables d'un colis
+                livré à la mauvaise adresse ou à la mauvaise personne si vous avez mal
+                indiqué les détails de livraison.</p>
+            <p>Nous ferons tout notre possible pour livrer votre commande en temps et en heure. Cependant,
+                il arrive que des retards soient inévitables en raison de facteurs indépendants
+                de notre volonté comme des pénuries de matériaux, des perturbations de
+                transport, des retards d'importation, des défaillances techniques ou des
+                demandes plus importantes que prévu. Veuillez noter que les livraisons
+                peuvent être retardées en période de soldes ou autres.</p>
+            <p>Nous ne sommes pas en mesure de livrer pendant les jours fériés, à Noël
+                ou le jour de l'An. À ces dates, les livraisons prendront plus longtemps que de
+                coutume. Veuillez compter un jour ouvré (lundi-vendredi, hors weekends et jours fériés)
+                de plus que votre méthode de livraison pour déterminer votre date de
+                livraison.</p>
+            <h3>Retours</h3>
+            <p>Vous pouvez nous retourner les Articles (les produits cosmétiques ou de soins ainsi
+                que les sous-vêtements et maillots de bains devront nous être retournés
+                non descellés, non utilisés avec l'opercule de protection) dans les 14
+                jours suivant la livraison, en vous assurant que :</p>
+            <ol class="decimal">
+                <li>les Articles renvoyés soient en parfait état, intacts et non portés
+                    (pas de traces de maquillage ni de tâches);
+                </li>
+                <li>les chaussures n'aient pas été portées en extérieur;
+                </li>
+                <li>les Articles retournés contiennent les étiquettes d'origine et les détails
+                    de commande.
+                </li>
+            </ol>
+            <p>Nous rembourserons le montant payé pour les Articles en tenant compte
+                de toute remise
+                ou promotion appliquée lors de la commande. Les frais de livraison 
+                ou de retour ne
+                seront pas remboursés. Si vous utilisez notre étiquette prépayée 
+                pour votre retour, sachez qu'une déduction de 4€ sera effectuée sur le 
+                montant final de votre remboursement. Les remboursements seront 
+                effectués par le même
+                moyen de paiement que la commande.</p>
+            <p>Ce qui précède n'affecte pas vos droits statutaires.</p>
+            <p>Veuillez noter que cette politique ne concerne que les Articles que vous avez achetés
+                sur nos Sites. Pour tout produit acheté sur un autre site, vous devrez vérifier
+                leurs propres conditions de retours.</p>
+            <h3>Annulation de votre contrat - clients europeens uniquement</h3>
+            <p>Si vous êtes un(e) client(e) européen, vous disposez d'un droit de rétraction
+                de 14 jours calendaires à compter de la date de réception de votre commande. L’exercice du droit de rétractation est exclu
+                pour les contrats suivants :
+            </p><ul>
+                <li>- les contrats de fourniture de biens qui ont été
+                    descellés par le consommateur après la
+                    livraison et qui ne peuvent être renvoyés pour
+                    des raisons d’hygiène ou de protection de la
+                    santé ; 
+                </li>
+            </ul>
+            <p></p>
+            <p>Pour que le délai de rétractation soit respecté,
+                il suffit que vous transmettiez votre
+                communication relative à l’exercice du droit de
+                rétractation avant l’expiration du délai de
+                rétractation.</p>
+            <p>Pour annuler votre commande, il vous faut nous en avertir au préalable en
+                nous retournant le <a href="https://static.IFOCOP.co.uk/media/upload/HELP-CONTACT/IFOCOP-cancellation-form-fr.pdf">formulaire
+                    d'annulation</a> ou en nous écrivant par email à l'adresse <a href="mailto:serviceclient@IFOCOPfr.fr">serviceclient@IFOCOPfr.fr</a> ou par
+                courrier postal à 75 TRAFFORD WHARF ROAD, MANCHESTER, UNITED KINGDOM, M17 1ES. Si
+                vous nous contactez par email ou par courrier postal, veuillez préciser votre nom,
+                votre adresse et votre numéro de commande.</p>
+            <p>Vous devez prendre soin des Articles reçus. Vous pouvez examiner les Articles et les
+                essayer mais vous ne devez pas les avoir portés.</p>
+            <p>Vous êtes responsable du retour de vos Articles, et notamment des frais de
+                retour à payer auprès du transporteur ou du bureau de poste.</p>
+            <p>Vous devez nous renvoyer les Articles dans leur état d'origine le plus rapidement
+                possible après nous avoir informés du retour. Nous déclinons toute
+                responsabilité en cas de perte ou de dommages des Articles avant qu'ils ne nous
+                parviennent, notamment s'ils se perdent ou sont endommagés lors du transit. </p>
+            <p>Si vous annulez votre contrat, vous serez remboursé(e) du prix que vous aurez payé
+                pour les Articles ainsi que d'une proportion des frais de livraison correspondant aux
+                tarifs les plus économiques et à la méthode de livraison la plus
+                commune disponible dans votre région à ce moment. Cependant, nous avons légalement
+                l'autorisation de diminuer votre remboursement pour refléter toute réduction
+                de la valeur des Articles, notamment s'ils ont été perdus ou endommagés
+                par vous ou pendant la livraison. Le remboursement sera effectué sur le moyen de
+                paiement utilisé à la commande, 14 jours calendaires maximum après
+                notre réception des Articles annulés ou après notre réception de
+                votre preuve d'envoi. </p>
+
+            <p>Ce qui précède n'affecte pas vos droits statutaires.</p>
+            <h3>Général</h3>
+            <p>L'utilisation que vous faites de nos Sites est régie par nos <a href="#tab3">conditions
+                    d'utilisation</a>. Ces conditions détaillent entre autres la manière dont
+                vous êtes autorisés à utiliser notre nom, nos logos et le contenu de nos
+                Sites. Veuillez prendre le temps de les lire attentivement afin de comprendre comment
+                utiliser nos Sites. En utilisant nos Sites, vous acceptez nos conditions d'utilisation.
+            </p>
+            <p>Lorsque vous vous servez des Sites, nous utilisons vos informations personnelles en conformité
+                avec notre <a href="#tab4">Politiques de confidentialité</a>. Veuillez la lire
+                attentivement pour comprendre à quelles fins nous utiliserons vos informations et
+                comment ces informations peuvent être partagées avec des tiers. En passant
+                votre commande, vous consentez aux terme de notre politique de confidentialité. </p>
+            <p>Nos Sites utilisent des cookies. Veuillez consulter notre <a href="#tab5">Politiques relative
+                    aux cookies</a> pour comprendre comment nous recueillons et utilisons les informations
+                collectées sur nos Sites. En utilisant nos Sites, vous acceptez les terme de notre
+                politique en matière de cookies. </p>
+            <p>Vous devez être âgé(e) de 16 ans ou plus pour pouvoir acheter des Articles
+                sur les Sites. Dans le cas contraire, l'un de vos parents ou tuteurs devra passer
+                commande pour vous.</p>
+            <p>Vous consentez à ne pas utiliser les Articles achetés sur nos Sites à
+                des fins commerciales ou de revente, et en aucun cas nous ne serons responsables d'une
+                quelconque perte de bénéfice, perte de revenu, interruption d'activités
+                ou perte d'opportunités d'affaires. Nous ne fournissons des Articles qu'à
+                des fins personnelles et domestiques. Si vous n'êtes pas un consommateur, vous
+                devez obtenir notre autorisation écrite préalable pour pouvoir acheter sur nos
+                Sites. Rien dans les présents terme n'exclut ni ne limite notre responsabilité
+                en cas de décès ou de dommages corporels dûs à une négligence,
+                une fraude ou une fausse représentation de notre part, ni aucune autre responsabilité
+                ne pouvant être écartée ou limitée selon le droit applicable.</p>
+            <p>Ces terme et conditions ainsi que tous les documents auxquels ils font mention, notre
+                politique de confidentialité, notre politique en matière de cookies et nos
+                conditions d'utilisation, constituent toute l'entente existant entre vous et nous
+                et remplace toute entente, assurance, déclaration, garantie et arrangement précédents
+                entre nous, écrits ou oraux, relatifs au même sujet.</p>
+            <p>En passant commande et en contractant avec nous, vous reconnaissez ne dépendre d'aucune
+                déclaration, représentation, assurance ou garantie (qu'elle ait été
+                faite à bon ou mauvais escient) qui ne soit établie dans les présents
+                terme ainsi que dans tous les documents auxquels ils font mention, notre politique de
+                confidentialité, notre politique de cookies et nos conditions d'utilisation.
+                Vous et nous reconnaissons qu'aucun de nous ne saurait présenter de fausses déclarations
+                ou d'inexactitudes innocentes ou négligentes les concernant.</p>
+            <p>Nous déclinons toute responsabilité en cas d'impossibilité ou de
+                retard dans l'exécution de n'importe laquelle de nos obligations, s'ils
+                sont causés par des facteurs indépendants de notre volonté.</p>
+            <p>Nous pouvons transférer nos droits et obligations contractuelles envers vous à
+                une autre organisation, mais cela n'affectera pas vos droits ou obligations établis
+                dans les présents terme. Vous pouvez transférer ces droits ou
+                obligations à une autre personne si l'on vous donne préalablement notre
+                accord écrit.</p>
+            <p>Lorsque vous achetez nos Articles, un contrat est passé entre vous et nous. Les présents
+                terme et conditions ne confèrent aucun droit à une autre personne que vous,
+                conformément à la Loi relative aux contrats 1999 (Droits des tiers).</p>
+            <p>Chaque clause de ces terme est gérée séparément. Si un tribunal
+                ou une autorité quelconque décide que l'une d'elle est illégale
+                ou inapplicable, les paragraphes restants demeurent en vigueur et de plein effet.</p>
+            <p>Si nous ne réussissons pas à exiger la stricte exécution de vos
+                obligations, ou si nous ne vous faisons pas respecter nos droits, ou si nous
+                tardons à le faire, cela ne signifie pas que nous renonçons à nos
+                droits ni que vous ne devez pas respecter vos obligations. Si nous renonçons à
+                faire valoir une inexécution, nous le ferons uniquement par écrit, et cela ne
+                signifie pas que nous renonçons automatiquement à une éventuelle inexécution
+                future de votre part. </p>
+            <p>Les présentes conditions d'utilisation sont régies par le droit anglais.
+                Cela signifie que l'utilisation que vous faites des Sites et de n'importe quel
+                contrat en vigueur avec nous ainsi que toute éventuelle poursuite ou réclamation
+                sont soumises au droit anglais. Les différends résultant des présents
+                terme et conditions ou de votre utilisation des Sites seront soumis à la juridiction
+                non-exclusive des tribunaux anglais.</p>
+            <p>Si vous avez des questions sur les présentes conditions ou sur les conditions régissant
+                l'utilisation de nos Sites, veuillez <a href="https://www.IFOCOPfr.fr/contact/">contacter notre
+                    service client</a></p></div>                </main>
+
+
+
+    <footer>
+        <ul>
+            <li><a href="../pages/mentions_legales.html" target="_blank">Mentions Légales</a></li>
+            <li><a href="../pages/conditions_utilisation.html" target="_blank">Condition d'utilisation</a></li>
+            <li><a href="../pages/politique_cookies.html" target="_blank">Politiques Relative aux Cookies</a></li>
+            <li><a href="../pages/politique_confidential.html" target="_blank">Politiques de confidentialité</a></li>
+            <li><a href="../pages/conditions_promotions.html" target="_blank">Condition des promotions</a></li>
+            <li><a href="../pages/termes_conditions.html" target="_blank">Termes et Conditions</a></li>
+        </ul>
+        <ul>
+            <li><a href="../pages/quisommesnous.html" target="_blank">Qui sommes nous ?</a></li>
+            <li><a href="../pages/ounoustrouver.html" target="_blank">Ou nous trouvez ?</a></li>
+            <li><a href="../pages/actualites.html" target="_blank">Actualités</a></li>
+        </ul>
+        <ul>
+            <li><a href="../pages/contact.html" target="_blank">Contactez-nous</a></li>
+            <li><a href="../pages/recrutement.html"  target="_blank">Nous recrutons !</a></li>
+            <li><a href="../pages/reservation.html" target="_blank">Prenez rendez vous</a></li>
+            <li><a href="../pages/avis.html" target="_blank">Avis</a></li>
+        </ul>
+        <ul class="logo_rs">
+            <li><a href="https://www.facebook.com/"  target="_blank"><img src="../images/logo_facebook.png" alt="Logo Facabook"/></a></li>
+            <li><a href="https://www.instagram.com/"  target="_blank"><img src="../images/logo_instagram.png" alt="logo instagram"/></a></li>
+            <li><a href="https://twitter.com/login"  target="_blank"><img src="../images/logo_twitter.png" alt="Logo Twitter"/></a></li>
+            <li><a href="https://www.whatsapp.com/?lang=fr"  target="_blank"><img src="../images/logo_whatsapp.png" alt="Logo WhatsApp"/></a></li>
+            <li><a href="https://fr.linkedin.com/"  target="_blank"><img src="../images/logo_in.png" alt="logo linked-in"/></a></li>
+        </ul>
+    </footer>
+
+    <script src="../js/barre_nav.js" type="text/javascript"></script> 
+
+
+
+</body>
+</html>
+

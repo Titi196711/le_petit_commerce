@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mentions Légales le Petit Commerce</title>
+        <link rel="stylesheet" href="../lPC.css" type="text/css"/>
+
+    </head>
+    <body>
+        <header>
+            <nav class="hambu">
+                <a href="#" onclick="openNav()">
+                    <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                </a>
+            </nav>
+            <img src="../images/le_petit_commerce.png" alt="Logo du Petit Commerce" id='logoLPC'/>
+            <a href='../pages/femmes.html' target='_blank'>
+                <p id='fem'>FEMMES</p></a>
+            <a href='../pages/hommes.html' target='_blank'>
+                <p id='hom'>HOMMES</p></a>
+            <!--<div id='rechercher'></div>-->
+            <form method='post' action="recherche.php" accept-charset="utf-8">
+                <input type="search" name="rech" id="rech" placeholder="Vous recherchez ..." size=30 maxlength="30"/>
+                <button id="loupe" type="submit" class="loupe">
+                    <img src="../images/icone_loupe.png" alt="Icone pour lancer la recherche" id='ico_loupe'/>
+                </button>
+            </form>
+            <!--</div>-->
+            <div id='trois_icones'>
+                <a href="../pages/inscription.html"><img src="../images/icone_compte.png" alt="Icone pour accéder à votre compte" id='ico_compte' title="Icone pour accéder à votre compte"/></a>
+                <img src="../images/icone_ajoupan.png" alt="Icone pour ajouter un article au panier" id='ico_ajoupan' onclick="ajpanier()"/>
+                <img src="../images/icone_panier.png" alt="Icone de votre panier" id='ico_panier' onclick="panierpage()"/>
+            </div>
+            <div id="sideNavigation" class="sidenav">
+                <!--<a href="#" class='menu'>Menu</a>-->
+                <p class="menu" >Menu</p>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+                <button class="dropdown-btn">Femmes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/robes.html" target="_blank">Robes</a>
+                    <a href="../pages/jupes.html" target="_blank">Jupes</a>
+                    <a href="../pages/escarpins.html" target="_blank">Escarpins</a>
+                    <a href="../pages/lunettes.html" target="_blank">Lunettes de soleil</a>
+                    <a href="../pages/sacs.html" target="_blank">Sacs</a>
+                </div>
+                <button class="dropdown-btn">Hommes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/chemises.html" target="_blank">Chemises</a>
+                    <a href="../pages/pantalons.html" target="_blank">Pantalons</a>
+                    <a href="../pages/blousons.html" target="_blank">blousons et Manteaux</a>
+                    <a href="../pages/chapeaux.html" target="_blank">Bonnets, casquettes et chapeaux</a>
+                </div>
+                <button class="dropdown-btn">Divers
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../pages/baskets.html">baskets</a>
+                </div>
+            </div>
+            <fieldset id="choix_lan">
+                <label for="radio_fr">
+                    <input type="radio" checked="checked" name="lan" id="radio_fr" value="1"/>
+                    <img src="../images/icone_fr.png" alt="drapeau Français" id="ico_fr"/>
+                </label>
+                <label for="radio_uk">
+                    <input type="radio" name="lan" id="radio_uk" value="2"/>
+                    <img src="../images/icone_uk.png" alt="drapeau Anglais" id="ico_uk"/>
+                </label>
+            </fieldset>
+        </header>
+        <main  id="mentions_legales">
+            <h1>Politiques de confidentialité</h1>
+            <p>
+                La présente politique stipule de quelle manière nous traitons les 
+                données personnelles que nous recueillons auprès de vous lorsque vous 
+                utilisez les sites suivants (que ce soit pour une simple visite ou pour y
+                passer commande) :
+                <a href="https://www.IFOCOP.com/">
+                    www.IFOCOP.com;
+                </a>
+                <a href="https://www.IFOCOPus.com/">
+                    www.IFOCOPus.com
+                </a>
+                <a href="https://www.IFOCOPau.com/">
+                    www.IFOCOPau.com;
+                </a>
+                <a href="https://www.IFOCOP.eu/">
+                    www.IFOCOP.eu;
+                </a>
+                <a href="https://www.IFOCOPfr.fr/">
+                    www.IFOCOPfr.fr;
+                </a>
+                <a href="https://www.IFOCOP.com/pl">
+                    www.IFOCOP.com/pl;
+                </a>
+                <a href="https://www.IFOCOP.com/de">
+                    www.IFOCOP.com/de;
+                </a>
+                and
+                <a href="https://www.IFOCOP.com/es">
+                    www.IFOCOP.com/es
+                </a>
+                et www.IFOCOP.com/es, et lorsque vous interagissez avec nos pages
+                Facebook, Twitter, Instagram et YouTube officielles (les ""Réseaux 
+                sociaux""), et lorsque vous commandez des articles IFOCOP 
+                (""Articles"") sur nos sites, auprès des magasins IFOCOP 
+                (""Magasins""), et auprès de nos sites et magasins partenaires 
+                (""Partenaires"", ""Plateformes tierces""). Utiliser les Sites, vous 
+                créer un compte (""Compte IFOCOP""), interagir avec nous sur les 
+                Réseaux sociaux et acheter des Articles en Magasin ou sur une Plateforme
+                tierce implique que vous acceptez les terme de cette politique et y 
+                consentez. 
+            </p>
+            <p>
+                IFOCOP Limited (numéro d'immatriculation 11 94 000 47 94)  et 
+                IFOCOP USA (Finance) Inc (""MUFI"") sont les propriétaires et 
+                exploitants des Sites et des comptes associés sur les Réseaux sociaux. 
+                IFOCOP Retail Limited (numéro d'entreprise 10033268) (""MRL"") est 
+                l'exploitant des Magasins. Ensemble, ML, MUFI et MRL sont ci-après 
+                désignés par ""nous"", ""notre"" et ""IFOCOP"". Notre siège social 
+                se trouve à l'adresse 75 Trafford Wharf Road, Manchester, United Kingdom
+                M17 1ES.
+            </p>
+            <p>
+                Nous nous engageons à assurer la confidentialité de vos données. 
+                Nous sommes enregistrés en tant que gestionnaire de données auprès du 
+                Bureau du Commissaire à l'Information.
+                <br>
+                <br>
+                Nous nous réservons le droit de modifier cette politique régulièrement. 
+                La dernière mise à jour de cette politique a eu lieu le 21 Juin 2018.
+            </p>
+            <p>
+                Vous avez des droits concernant les informations que nous recueillions 
+                auprès de vous, la manière dont nous les traitons et les utilisons. Vous
+                trouverez ci-dessous plus d'informations sur les droits dont vous 
+                disposez, mais avant tout, nous aimerions vous expliquer au préalable la
+                manière dont nous recueillons les données vous concernant, où trouver 
+                des informations spécifiques sur ces informations et les raisons pour 
+                lesquelles nous les collectons.
+            </p>
+            <p></p>
+            <br>
+            <br>
+            <h3>
+                COMMENT, POURQUOI ET OÙ ?
+            </h3>
+            Nous recueillons des informations lorsque vous utilisez 
+            nos sites et à différents moments lorsque vous interagissez avec nous. 
+            Cela peut se produire de différentes manières, mais vous en serez 
+            notifié-e à chaque fois - jetez un œil aux fenêtres pop-up et aux 
+            bannières du site, elles vous donneront un aperçu rapide de ce que nous 
+            collectons et pourquoi. Vous aurez toujours la possibilité de cliquer 
+            pour obtenir plus d'informations (voir la section "Transmission 
+            d'informations" ci-dessous pour savoir quelles informations seront 
+            fournies, mais n'hésitez pas à nous contacter directement aux 
+            coordonnées ci-dessous si vous avez d'autres questions).
+            <p></p>
+            <p></p>
+            <br>
+            <br>
+            <h3>
+                QUELS SONT MES DROITS ?
+            </h3>
+
+            <p>
+
+                <strong>
+                </strong></p><ol class="alpha"><strong>
+                    Transmission d'informations
+                </strong>
+
+                <p>
+                </p><ol class="alpha">
+                    Vous pouvez demander les informations suivantes à 
+                    chaque fois que nous recueillons des données à votre sujet :
+                    (a) notre identité et nos coordonnées; 
+                    (b) quelle utilisation nous comptons faire de vos données, et sur quelle
+                    "base juridique";
+                    (c) si vous êtes obligé-e de les fournir et quelles seraient les 
+                    conséquences d'un refus de fournir ces informations;
+                    (d) avec qui nous partagerons vos données;
+                    (e) si vos données vont être envoyées en dehors de la Zone Économique 
+                    Européenne, auquel cas, quelles mesures seront prises pour les protéger;
+
+                    (f) combien de temps nous conserverons vos données;
+                    (g) les droits dont vous disposez concernant notre utilisation de vos 
+                    données (voir ci-dessous);
+                    (h) si nous recueillons des données sans votre permission explicite, le 
+                    fait que vous ayez le droit de retirer votre consentement n'importe 
+                    quand;
+                    (i) que vous pouvez contacter le bureau du commissaire à l'information 
+                    (Information Commissioners Office, www. ico.org.uk) ou l'autorité en 
+                    charge des questions de protection des données dans votre localité, si 
+                    vous avez une plainte à formuler contre notre utilisation de vos 
+                    données;
+                    (j) si nous prenons des décisions automatisées à votre sujet, dans quel 
+                    but, et quelles en sont pour vous les conséquences éventuelles.
+                    <p>
+                    </p></ol>
+                <strong>
+                    Accès
+                </strong>
+                <ol class="alpha">
+
+                    <p>
+                    </p><p>
+                        Vous pouvez demander les informations suivantes sur la manière dont nous
+                        utilisons vos données :
+                        (a) dans quel but nous les utilisons; 
+                        (b) quel type d'informations nous utilisons;
+                        (c) avec qui nous partageons vos données;
+                        (d) combien de temps nous conserverons vos données;
+                        (e) de quel droit vous disposez concernant notre utilisation de vos 
+                        données;
+                        (f) si vous pouvez formuler une plainte auprès du bureau du commissaire à
+                        l'information ou de l'autorité en charge des questions de protection 
+                        des données dans votre localité;
+                        (g) si nous avons recueilli vos données à partir d'une personne tierce, 
+                        de qui il s'agit;
+                        (h) si nous prenons des décisions automatisées à votre sujet;
+                        (i) si vos données vont être envoyées en dehors de la Zone Économique 
+                        Européenne, et si oui, quelles mesures seront prises pour les protéger. 
+                        Vous pouvez également nous demander une copie des données que nous 
+                        détenons.
+                    </p></ol>
+                <p></p>
+                <strong>
+                    Rectification 
+                </strong>
+                <ol class="alpha">
+                    <p>
+                    </p><p>
+                        Vous avez le droit de nous demander de corriger toute information incorrecte dont nous disposons.
+
+
+                    </p></ol>
+                <p></p>
+                <strong>
+                    Effacement
+                </strong>
+                <ol class="alpha">
+                    <p>
+                    </p><p>
+                        Vous pouvez nous demander de supprimer les données dont nous disposons à
+                        votre sujet dans les cas suivants :
+                        (a) nous n'en avons plus besoin pour les fins auxquelles elles ont été 
+                        recueillies;
+                        (b) si nous les avons recueillies avec votre permission explicite, dès 
+                        que vous retirez votre consentement;
+                        (c) si vous avez un motif pour faire objection à notre utilisation (voir
+                        ci-dessous) et que nous n'avons pas d'autres motifs légitimes impérieux
+                        nous permettant de le faire;
+                        (d) si nous avons utilisé vos informations de manière illégale
+                        (e) si vous devez nous demander de supprimer vos données pour des 
+                        obligations légales. Veuillez noter que nous pourrions être dans 
+                        l'obligation de conserver certaines informations à des fins de 
+                        réclamation ou pour respecter nos propres obligations légales. 
+
+
+                    </p></ol>
+                <p></p>
+                <strong>
+                    Restriction
+                </strong>
+                <ol class="alpha">
+                    <p>
+                    </p><p>
+                        Vous pouvez nous demander d'arrêter d'utiliser vos données dans les cas 
+                        suivants :
+                        (a) vous pensez que les informations dont nous disposons sont 
+                        incorrectes;
+                        (b) l'utilisation que nous en faisons est illégale mais vous ne voulez 
+                        pas que nous supprimions toutes vos informations;
+                        (c) si vous vous opposez au traitement que nous en faisons (voir 
+                        ci-dessous);
+                        (d) nous n'en avons plus besoin pour les fins auxquelles elles ont été 
+                        recueillies;
+                        (e) si nous les avons recueillies avec votre permission explicite, dès 
+                        que vous retirez votre consentement;
+                        (f) si vous avez un motif pour faire objection à notre utilisation (voir
+                        ci-dessous) et que nous n'avons pas d'autres motifs légitimes impérieux
+                        nous permettant de le faire;
+                        (g) si vous devez nous demander de supprimer vos données pour des 
+                        obligations légales. Cependant, veuillez noter que nous pourrions être 
+                        dans l'obligation de conserver certaines informations à des fins de 
+                        réclamation ou pour assurer la protection d'une autre personne.
+
+
+                    </p></ol>
+                <p></p>
+                <strong>
+                    Portabilité
+                </strong>
+                <ol class="alpha">
+                    <p>
+                    </p><p>
+                        Vous avez le droit de nous demander de vous envoyer vos informations ou 
+                        de les envoyer à une personne tierce, si nous les avions recueillies 
+                        avec votre consentement explicite. Nous devrons vous les fournir sous un
+                        format structuré, couramment utilisé et lisible sur ordinateur. 
+                        Veuillez noter que ceci ne concerne pas les informations que nous avons 
+                        déduites ou établies nous mêmes, par exemple celles que nous recueillons
+                        pour comprendre vos habitudes de shopping chez IFOCOP afin de vous 
+                        offrir une meilleure expérience client. 
+
+
+                    </p></ol>
+                <p></p>
+                <strong>
+                    Objection
+                </strong>
+                <ol class="alpha">
+                    <p>
+                    </p><p>
+                        Vous avez le droit de nous demander d'arrêter d'utiliser vos données 
+                        dans le cas où la raison légale fournie pour notre utilisation est 
+                        "intérêts légitimes" (voir ci-dessus), mais que votre situation 
+                        personnelle requiert que nous arrêtions de les utiliser. Vous avez 
+                        également ce droit dans le cas où nous avons recueilli ces données dans 
+                        un but de marketing direct et que vous vouliez que nous arrêtions de les
+                        utiliser à cet effet. 
+
+                    </p></ol>
+
+                <strong>
+                    Price de décision automatisée
+                </strong>
+                <ol class="alpha">
+                    <p>
+                    </p><p>
+                        Pendant le traitement de vos données personnelles, nous pourrions avoir 
+                        recours à des décisions automatisées dans l’unique but de lutter contre 
+                        la fraude.  
+
+
+                    </p></ol>
+                <p></p>
+            </ol>
+            <p></p>
+            <br>
+            <br>
+            <h3>
+                Enfants
+            </h3>
+            <p>
+            </p><p>
+                Les Sites ne sont pas destinés à être utilisés par des enfants de moins 
+                de 13 ans. Nous ne recueillerons pas intentionnellement d'informations 
+                personnelles auprès d'enfants de moins de 13 ans. Si vous avez moins de 
+                13 ans, vous ne devez ni utiliser les Sites, ni fournir d'informations 
+                vous concernant, notamment, mais sans s'y limiter, votre nom, votre 
+                adresse, votre adresse email, votre pseudonyme ou nom d'utilisateur. Si 
+                nous apprenons que nous détenons les informations personnelles d'un 
+                enfant de moins de 13 ans sans le consentement ou la vérification de ses
+                parents ou tuteurs légaux, nous nous engageons à les supprimer. Si vous
+                avez des raisons de croire que nous détenons des informations 
+                concernant un enfant de moins de 13 ans, veuillez nous contacter à 
+                l'adresse ci-dessous.
+
+
+            </p>
+            <br>
+            <br>
+            <h3>
+                Réseaux sociaux
+            </h3>
+            <p>
+            </p><p>
+                Interagir sur les Réseaux sociaux ("Interagir" ou "Interaction", 
+                désignant sans s'y limiter : rejoindre notre groupe/page IFOCOP 
+                officielle sur les Réseaux sociaux ou la suivre, "aimer" nos 
+                publications, les "retweeter", les "reposter", écrire un commentaire s'y
+                rapportant sur les Réseaux sociaux) implique que vous consentez à ce 
+                que nous interagissions avec vous et que vous acceptiez de nous donner 
+                accès à vos informations sur les Réseaux sociaux, conformément aux 
+                terme d'utilisation et aux politiques de confidentialité des Réseaux 
+                sociaux en question. Les informations que nous pourrons recueillir à 
+                votre sujet si vous interagissez avec nous sur les Réseaux sociaux 
+                peuvent comprendre, mais sans s'y limiter, votre nom, votre profil 
+                d'utilisateur, votre âge, vos préférences, vos choix et vos opinions sur
+                le sujet de la page concernée, vos photos et autres images ainsi que 
+                vos vidéos. Vos interactions avec nous sur les Réseaux sociaux 
+                pourraient vous conduire à nous soumettre une photo ou une vidéo de vous
+                ("votre Image"). Veuillez noter que nous n'utiliserons votre Image ou 
+                vos autres informations personnelles (en dehors des conditions 
+                d'utilisation ou de la politique de confidentialité de la plateforme en 
+                question) qu'après avoir reçu votre consentement explicite.
+                <br>
+                <br>
+                Si vous désirez que nous arrêtions d'interagir avec vous sur les Réseaux
+                sociaux ou d'utiliser vos données aux fins décrites ci-dessous, vous 
+                pouvez nous contacter à tout moment aux coordonnées indiquées ci-après. 
+                Interagir avec nous (sur les Sites, sur les Réseaux sociaux ou ailleurs)
+                signifie que vous consentez à nous accorder une licence perpétuelle, 
+                mondiale, exempte de redevances et irrévocable nous permettant 
+                d’utiliser votre Image et vos Contributions à des fins publicitaires et 
+                promotionnelles pour IFOCOP et les biens et services proposés par 
+                IFOCOP, notamment mais sans s’y limiter dans le but d’assurer votre 
+                participation aux activités promotionnelles mentionnées et ce sur 
+                n’importe quelle plateforme, par exemple (sans limitation) à la 
+                télévision, sur les Réseaux sociaux, sur nos Sites, sur papier et sur 
+                matériaux publicitaires extérieurs. Nous pourrons utiliser votre Image 
+                et vos Contributions à d’autres fins qui seront détaillées dans les 
+                terme et conditions des promotions indiqués sur notre page de 
+                conditions des promotions et/ou lorsque nous recueillerons ladite Image.
+
+
+
+
+            </p> 
+            <br>
+            <br>
+            <h3>
+                COMMENT EXERCER MES DROITS ?
+            </h3>
+            Si vous désirez exercer n'importe lequel de ces droits, veuillez 
+            contacter notre Service client à l'adresse 
+            informationrights@IFOCOP.com  
+            <p></p>
+            <br>
+            <br>
+            <br></div>                
+        </main>
+
+
+
+
+        <footer>
+            <ul>
+                <li><a href="../pages/mentions_legales.html" target="_blank">Mentions Légales</a></li>
+                <li><a href="../pages/conditions_utilisation.html" target="_blank">Condition d'utilisation</a></li>
+                <li><a href="../pages/politique_cookies.html" target="_blank">Politiques Relative aux Cookies</a></li>
+                <li><a href="../pages/politique_confidential.html" target="_blank">Politiques de confidentialité</a></li>
+                <li><a href="../pages/conditions_promotions.html" target="_blank">Condition des promotions</a></li>
+                <li><a href="../pages/termes_conditions.html" target="_blank">Termes et Conditions</a></li>
+            </ul>
+            <ul>
+                <li><a href="../pages/quisommesnous.html" target="_blank">Qui sommes nous ?</a></li>
+                <li><a href="../pages/ounoustrouver.html" target="_blank">Ou nous trouvez ?</a></li>
+                <li><a href="../pages/actualites.html" target="_blank">Actualités</a></li>
+            </ul>
+            <ul>
+                <li><a href="../pages/contact.html" target="_blank">Contactez-nous</a></li>
+                <li><a href="../pages/recrutement.html"  target="_blank">Nous recrutons !</a></li>
+                <li><a href="../pages/reservation.html" target="_blank">Prenez rendez vous</a></li>
+                <li><a href="../pages/avis.html" target="_blank">Avis</a></li>
+            </ul>
+            <ul class="logo_rs">
+                <li><a href="https://www.facebook.com/"  target="_blank"><img src="../images/logo_facebook.png" alt="Logo Facabook"/></a></li>
+                <li><a href="https://www.instagram.com/"  target="_blank"><img src="../images/logo_instagram.png" alt="logo instagram"/></a></li>
+                <li><a href="https://twitter.com/login"  target="_blank"><img src="../images/logo_twitter.png" alt="Logo Twitter"/></a></li>
+                <li><a href="https://www.whatsapp.com/?lang=fr"  target="_blank"><img src="../images/logo_whatsapp.png" alt="Logo WhatsApp"/></a></li>
+                <li><a href="https://fr.linkedin.com/"  target="_blank"><img src="../images/logo_in.png" alt="logo linked-in"/></a></li>
+            </ul>
+        </footer>
+
+        <script src="../js/barre_nav.js" type="text/javascript"></script> 
+
+    </body>
+</html>

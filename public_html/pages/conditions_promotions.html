@@ -1,0 +1,265 @@
+<html lang="fr">
+    <head>
+        <title>Conditions Promotionnelle</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../lPC.css" type="text/css"/>
+    </head>
+    <body>
+        <header>
+            <nav class="hambu">
+                <a href="#" onclick="openNav()">
+                    <svg width="30" height="30" id="icoOpen">
+                    <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                    <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                    <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                    </svg>
+                </a>
+            </nav>
+            <img src="../images/le_petit_commerce.png" alt="Logo du Petit Commerce" id='logoLPC'/>
+            <a href='../Pages/femmes.html' target='_blank'>
+                <p id='fem'>FEMMES</p></a>
+            <a href='../Pages/hommes.html' target='_blank'>
+                <p id='hom'>HOMMES</p></a>
+            <!--<div id='rechercher'></div>-->
+            <form method='post' action="recherche.php" accept-charset="utf-8">
+                <input type="search" name="rech" id="rech" placeholder="Vous recherchez ..." size=30 maxlength="30"/>
+                <button id="loupe" type="submit" class="loupe">
+                    <img src="../images/icone_loupe.png" alt="Icone pour lancer la recherche" id='ico_loupe'/>
+                </button>
+            </form>
+            <!--</div>-->
+            <div id='trois_icones'>
+                <a href="../Pages/inscription.html"><img src="../images/icone_compte.png" alt="Icone pour accéder à votre compte" id='ico_compte' title="Icone pour accéder à votre compte"/></a>
+                <img src="../images/icone_ajoupan.png" alt="Icone pour ajouter un article au panier" id='ico_ajoupan' onclick="ajpanier()"/>
+                <img src="../images/icone_panier.png" alt="Icone de votre Panier" id='ico_panier' onclick="panierpage()"/>
+            </div>
+            <div id="sideNavigation" class="sidenav">
+                <!--<a href="#" class='menu'>Menu</a>-->
+                <p class="menu" >Menu</p>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
+
+                <button class="dropdown-btn">Femmes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../Pages/robes.html" target="_blank">Robes</a>
+                    <a href="../Pages/jupes.html" target="_blank">Jupes</a>
+                    <a href="../Pages/escarpins.html" target="_blank">Escarpins</a>
+                    <a href="../Pages/lunettes.html" target="_blank">Lunettes de soleil</a>
+                    <a href="../Pages/sacs.html" target="_blank">Sacs</a>
+                </div>
+                <button class="dropdown-btn">Hommes
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../Pages/chemises.html" target="_blank">Chemises</a>
+                    <a href="../Pages/pantalons.html" target="_blank">Pantalons</a>
+                    <a href="../Pages/Blousons.html" target="_blank">Blousons et Manteaux</a>
+                    <a href="../Pages/chapeaux.html" target="_blank">Bonnets, casquettes et chapeaux</a>
+                </div>
+                <button class="dropdown-btn">Divers
+                    <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-container">
+                    <a href="../Pages/Baskets.html">Baskets</a>
+                </div>
+            </div>
+            <fieldset id="choix_lan">
+                <label for="radio_fr">
+                    <input type="radio" checked="checked" name="lan" id="radio_fr" value="1"/>
+                    <img src="../images/icone_fr.png" alt="drapeau Français" id="ico_fr"/>
+                </label>
+                <label for="radio_uk">
+                    <input type="radio" name="lan" id="radio_uk" value="2"/>
+                    <img src="../images/icone_uk.png" alt="drapeau Anglais" id="ico_uk"/>
+                </label>
+            </fieldset>
+        </header>
+
+        <main id="Mentions_legales">
+            <h1>Conditions des promotions</h1>
+
+
+            <p>Cette page définit les conditions légales de participation aux 
+                offres, compétitions, tirages au sort et autres promotions proposées par
+                Le Petit Commerce (les «Promotions »).</p>
+
+
+
+            <h3>Termes et conditions de vente</h3>
+            <p><strong>Termes et conditions des promotions</strong></p>
+            <p>Les présentes conditions s'appliquent à l'utilisation de codes promotionnels ("Codes")
+                offerts par
+                Le Petit Commerce sur ses sites, sur les réseaux sociaux et par email ("Matériel promotionnel")
+                ("Codes
+                promotionnels"). Les Codes donnent droit aux remises décrites dans le Matériel promotionnel
+                ("Remises") et sont applicables à toute commande passée sur le site Le Petit Commerce indiqué.</p>
+            <ol>
+                <li>Pour profiter de la Remise, il vous faudra sélectionner les articles que vous désirez
+                    acheter puis procéder à la commande, où vous devrez saisir le code indiqué sur le Matériel
+                    promotionnel ("Code") dans la case prévue à cet effet. Le Code ne pourra être utilisé qu'une seule
+                    fois.Veuillez noter qu'il n'est possible de saisir qu'un seul code lors de votre commande, et
+                    que le Code et la Remise sont par conséquent non cumulables à aucune autre offre, promotion ou
+                    réduction, notamment réduction étudiante. Le Code ne pourra s’utiliser à d’autres fins
+                    que celles indiquées dans les présentes conditions d’utilisation. La Remise n’est pas
+                    transférable ni échangeable contre aucun service ou article ni aucune somme d’argent, bon cadeau ou
+                    autre forme de compensation.
+                </li>
+                <li>Utiliser le Code implique que vous acceptez les présentes conditions d'utilisation. Si
+                    vous ne les acceptez pas, vous ne devez pas utiliser ce Code.
+                </li>
+                <li>Vous pourrez profiter de la Remise pendant la période indiquée sur le Matériel
+                    promotionnel ("Période de la promotion"). À la fin de la Période de la promotion, celle-ci expirera
+                    et la Remise ne sera plus disponible.
+                </li>
+                <li>Conditions d'utilisation </li>
+                <li>Vous devez acheter un article pour pouvoir utiliser le Code;</li>
+                <li>Vous devez résider dans le pays indiqué sur le Matériel promotionnel et passer
+                    commande sur les Sites indiqués;
+                </li>
+                <li>Vous devez avoir 16 ans ou plus. Si vous avez moins de 18 ans, vous devez avoir
+                    la permission de vos parents ou tuteurs légaux pour participer, et en participant vous
+                    confirmez que vous y avez été autorisé-e;
+                </li>
+                <li>Si le Code vous a été envoyé de manière personnelle, par exemple par email, vous
+                    ne devez pas le partager avec qui que ce soit. Le Code ne peut être utilisé que par
+                    vous;
+                </li>
+                <li>Vous devez utliser le Code dans le respect des présentes <a href="https://www.Le Petit Commercefr.fr/terms">conditions d'utilisation</a>.
+                </li>
+            </ol>
+            <ol>
+                <li>Nous nous réservons le droit de refuser la Remise à toute personne ne respectant pas
+                    ces conditions.
+                </li>
+                <li>Nous nous réservons le droit d'annuler ou de modifier le Code promotionnel à n'importe
+                    quel moment si nous l'estimons nécessaire et/ou si certaines circonstances indépendantes de
+                    notre contrôle empêchent l'offre de se dérouler normalement, par exemple si des défaillances
+                    logicielles ou de réseau empêchent d’utiliser ou d’appliquer le Code. Nous mettrons
+                    toujours tout en place pour minimiser les conséquences d'une telle annulation ou modification
+                    pour les participants afin d'éviter les déceptions.
+                </li>
+                <li>Toute commande passée avec un Code est soumise aux <a href="https://www.Le Petit Commercefr.fr/terms">Conditions générales de vente</a>. Tout
+                    article acheté à prix réduit et renvoyé pour remboursement ne sera remboursé que du montant
+                    après Remise prise en compte.
+                </li>
+                <li>L'utilisation que vous faites des Codes peut être soumise à d'autres termes et
+                    conditions, par exemple si vous avez reçu un Code en vous créant un compte Le Petit Commerce, vous devez vous
+                    conformer
+                    aux <a href="https://www.Le Petit Commercefr.fr/terms">Termes et conditions</a> de création
+                    d'un nouveau compte client.
+                </li>
+            </ol>
+            <p>....................................</p>
+
+            <p>15€ de réduction dès 50€ d'achats</p>
+            <p>Code  : <b>JEVEUX15</b></p>
+
+            <p>Cette offre est valable à partir du 21/05/2018 11h00 pour une durée 
+                limitée et permet aux client-es de bénéficier d'une remise de 15€ sur 
+                toute commande de plus de 50€. Pour en profiter, saisissez le code 
+                JEVEUX15 lors de la commande. Ce code n'est valable que sur les articles
+                commandés sur www.Le Petit Commercefr.fr et ne s'applique pas aux frais de 
+                livraison ni aux catégories Déstockage, Outlet et Beauté. Cette offre 
+                est non cumulable à aucune autre promotion, remise (notamment réduction 
+                étudiante) ni aucun autre code. La gestion de cette promotion est 
+                effectuée par Le Petit Commerce Limited (société immatriculée 3235904), 
+                Wharfside, 75 Trafford Wharf Road, Salford, Manchester, M17 1ES.</p>
+
+            <p>....................................</p>
+
+            <p>-30% dès 3 articles achetés</p>
+            <p>Code :&nbsp; <b>BABESAVE</b></p>
+
+            <p>Cette offre est valable le&nbsp;31/05/2018&nbsp;à partir 
+                de&nbsp;11h00&nbsp;pour une durée limitée et s'applique aux articles 
+                commandés sur le site&nbsp;https://www.Le Petit Commercefr.fr/, à l'exception 
+                des produits de la catégorie Beauté.&nbsp;&nbsp;Une remise de 30% sera 
+                appliquée à l'ajout de 3 articles au panier. &nbsp;Cette offre est non 
+                cumulable à aucun autre code ni aucune autre remise, offre ou promotion.
+                Pour en profiter, saisissez le code&nbsp;BABESAVE&nbsp;lors de votre 
+                commande. La gestion de cette promotion est effectuée par Le Petit Commerce 
+                Limited (société immatriculée 3235904), Wharfside, 75 Trafford Wharf 
+                Road, Salford, Manchester, M17 1ES.</p>
+
+            <h3> Termes et conditions de création d'un nouveau compte client</h3>
+            <p><strong>Termes et conditions de création d'un nouveau compte client</strong></p>
+            <p>Les présentes conditions s'appliquent à la création d'un compte Le Petit Commerce ("Compte"). Pour
+                ouvrir un Compte, il vous faudra accepter les présentes conditions. Si vous ne les acceptez pas, vous
+                ne devez pas vous créer de Compte.</p>
+            <ol>
+                <li>Compléter le formulaire d'inscription ("Formulaire") implique que vous acceptez
+                    d'ouvrir un compte chez Le Petit Commerce. Ce compte vous permettra de passer commande sur nos sites, de
+                    recevoir des offres par les moyens de communication de votre choix, et de profiter d'une
+                    expérience shopping personnalisée sur nos Sites (la personnalisation se fait par le biais de
+                    cookies, veuillez prendre connaissance de notre Politique en matière de cookies
+                    [https://www.Le Petit Commercefr.fr/terms#tab5] pour plus d'informations).
+                </li>
+                <li>Les informations que vous nous fournissez dans le Formulaire seront traitées
+                    conformément à notre <a href="https://www.Le Petit Commercefr.fr/terms#tab4">Politique de confidentialité</a>.
+                    Nous utiliserons notamment les données que vous nous aurez transmises pour vous envoyer des
+                    offres et lettres d'information par le moyen de communication de votre choix. Vous devrez nous
+                    informer immédiatement de tout changement de coordonnées. Pour plus d'informations sur la manière
+                    dont nous utilisons vos données, n'hésitez pas à contacter notre Service Client à
+                    serviceclient@Le Petit Commercefr.fr ou Service client, Le Petit Commerce.
+                </li>
+                <li>Vous devez être âgé-e de 16 ans ou plus pour vous créer un Compte. Si vous avez moins
+                    de 18
+                    ans, vous devez avoir la permission de l'un de vos parents ou tuteurs légaux pour vous
+                    créer un
+                    Compte et votre inscription implique que vous avez obtenu ladite permission.
+                </li>
+                <li>Vous devez respecter les <a href="../Pages/Conditions_utilisation.html">Conditions
+                        d'utilisation</a> pour utiliser les sites.
+                </li>
+                <li>Tous les achats effectués avec votre Compte seront sujets aux <a href="../Pages/Conditions_utilisation.html">Conditions générales de vente</a>.</li>
+                <li>Si vous désirez profiter d'une offre promotionnelle, il vous faudra également
+                    respecter les
+                    <a href="../Pages/Termes_Conditions.html">Termes et conditions</a> des promotions et
+                    notamment mais sans s'y limiter, les <a href="../Pages/Conditions_utilisation.html">conditions
+                        d'utilisation</a> des codes promos si vous disposez d'un code donnant droit à une
+                    remise sur vos achats.
+                </li>
+                <li>Les présents termes et conditions sont soumis aux lois en vigueur en France.
+                </li>
+
+            </ol>
+        </main>        
+
+        <footer>
+            <ul>
+                <li><a href="../Pages/Mentions_legales.html" target="_blank">Mentions Légales</a></li>
+                <li><a href="../Pages/Conditions_utilisation.html" target="_blank">Condition d'utilisation</a></li>
+                <li><a href="../Pages/Politique_cookies.html" target="_blank">Politique Relative aux Cookies</a></li>
+                <li><a href="../Pages/Politique_confidential.html" target="_blank">Politique de confidentialité</a></li>
+                <li><a href="../Pages/Conditions_promotions.html" target="_blank">Condition des promotions</a></li>
+                <li><a href="../Pages/Termes_Conditions.html" target="_blank">Termes et conditions</a></li>
+            </ul>
+            <ul>
+                <li><a href="../Pages/quisommesnous.html" target="_blank">Qui sommes nous ?</a></li>
+                <li><a href="../Pages/ounoustrouver.html" target="_blank">Ou nous trouvez ?</a></li>
+                <li><a href="../Pages/Actualites.html" target="_blank">Actualités</a></li>
+            </ul>
+            <ul>
+                <li><a href="../Pages/contact.html" target="_blank">Contactez-nous</a></li>
+                <li><a href="../Pages/recrutement.html"  target="_blank">Nous recrutons !</a></li>
+                <li><a href="../Pages/reservation.html" target="_blank">Prenez rendez vous</a></li>
+                <li><a href="../Pages/avis.html" target="_blank">Avis</a></li>
+            </ul>
+            <ul class="logo_rs">
+                <li><a href="https://www.facebook.com/"  target="_blank"><img src="../images/logo_facebook.png" alt="Logo Facabook"/></a></li>
+                <li><a href="https://www.instagram.com/"  target="_blank"><img src="../images/logo_instagram.png" alt="logo instagram"/></a></li>
+                <li><a href="https://twitter.com/login"  target="_blank"><img src="../images/logo_twitter.png" alt="Logo Twitter"/></a></li>
+                <li><a href="https://www.whatsapp.com/?lang=fr"  target="_blank"><img src="../images/logo_whatsapp.png" alt="Logo WhatsApp"/></a></li>
+                <li><a href="https://fr.linkedin.com/"  target="_blank"><img src="../images/logo_in.png" alt="logo linked-in"/></a></li>
+            </ul>
+        </footer>
+
+        <script src="../js/barre_nav.js" type="text/javascript"></script> 
+
+
+
+    </body>
+</html>
+

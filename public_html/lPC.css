@@ -1,0 +1,764 @@
+/* 
+    Created on : 7 déc. 2019, 14:59:15
+    Author     : Thierry VOIZARD
+    Formation  : IFOCOP
+*/
+/*la police générale du site*/
+html{
+    font-family: "Segoe Script", Helvetica, Arial;
+}
+/*L'entete'*/
+header{
+    /*    background-color: #EEE;
+        overflow: hidden;*/
+    width: 100%;
+}
+/*Le logo du site*/
+#logoLPC{
+    float: left;
+    width : 10%;
+    padding: 1%;
+}
+/*Les deux grandes catégories, surout à droite du logo */
+#fem, #hom{
+    float: left;
+    display: inline-block;
+    font-size: 2em;
+    padding: 1%;
+    margin-left: 1%;
+    margin-right: 1%;
+}
+#fem:hover{
+    background-color: rgba(255,140,233,0.80);
+}
+#hom:hover{
+    background-color: rgba(38,116,255,0.80);
+}
+/*Un petit formulaire pour initier la barre de recherche*/
+header form{
+    float: left;
+    display: inline;
+    width:30%;
+}
+/*la barre de recherche*/
+#rech{
+    font-size: 1.2em;
+    padding: 1%;
+    border-radius: 30px;
+    margin: 8% 2% 2% 15%;
+}
+/*la petite loupe qui sert de bouton pour lancer la recherche*/
+.loupe{
+    width: 9%;
+    position: relative;
+    top: 5px;
+    right: 60px;
+    border: none;
+    background-color: rgba(255,255,255,0);
+}
+#ico_loupe{
+    /*display: inline-block;*/
+    width: 80%;
+    position: relative;
+}
+#rech:hover{
+    background-color: rgba(128,128,128,0.80);
+}
+/*les trois icones : le compte, ajouter au panier et le panier*/
+#trois_icones{
+    float: left;
+    margin: 1%;
+    /*box-sizing: border-box;*/
+    width: 16%;
+}
+#trois_icones img{
+    margin-left: 2%;
+    margin-right: 2%;
+}
+#ico_compte:hover,#ico_ajoupan:hover,#ico_panier:hover{
+    filter: invert(1);
+}
+/*CSS pour les boutons radios du choix de la langues*/
+#choix_lan{
+    float: left;
+    width: 70px;
+    border: none;
+}
+#radio_fr, #radio_uk{ 
+    display: none;
+ }
+#choix_lan img{
+    width: 100%;
+}
+/* IMAGE STYLES */
+[type=radio] + img {
+    cursor: pointer;
+    opacity: 0.20;
+}
+[type=radio]:checked + img {
+    /*outline: 1px solid #00a;*/
+    opacity: 1;
+}
+/*Pour une zone section*/
+section{
+    display: block;
+    overflow: hidden;
+    margin:0;
+    padding:0;
+    vertical-align: top;
+    width: 100%;
+}
+section > img{
+    width: 10%;
+    float: left;
+    height: 90%;
+}
+/*Le pied de page*/
+footer{
+    width: 100%;
+}
+footer ul{
+    display: block;
+    float: left;
+    margin-left: 3%;
+}
+footer li{
+    text-decoration: none;
+    list-style-type: none;
+}
+/*rs pour réseau sociaux*/
+.logo_rs{    
+    width: 500px;
+}
+.logo_rs img{
+    display: inline;
+    float: left;
+    width: 20%;
+    padding: 20px;
+}
+/*La barre de navigation située à gauche*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 10px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+/* Le menu de la barre de navigation */
+.sidenav a, .dropdown-btn {
+    font-family: "Segoe Script";
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    border: none;
+    background: none;
+    width:100%;
+    text-align: left;
+    cursor: pointer;
+    outline: none;
+    float: left;
+}
+/* Changement de couleur du menu quand la souris passe dessus */
+.sidenav a:hover, .offcanvas a:focus, .dropdown-btn:hover {
+    color: #f1f1f1;
+}
+.dropdown-container {
+    display: none;
+    background-color: #262626;
+    padding-left: 8px;
+}
+/* la petite icone pour le menu */
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+} 
+/* Le bouton pour ferme le menu X */
+.sidenav .closebtn {
+    position: absolute;
+    float: left;
+    width: 10%;
+    top: 30px;
+    right: 22px;
+    /*font-size: 36px;*/
+    /*margin-left: 50px;*/
+}
+.menu{
+    float: left;
+    width: 30%; 
+    margin-top: 20px;
+    font-family: "Segoe Script";
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #818181;
+    display: block;
+}
+/* Possibilité de pousser le contenu de la page quand on ouvre le menu */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+    /*overflow: hidden;*/
+    width: 100%;
+    display: block;
+}
+* {box-sizing: border-box;}
+/*Une grille pour la page principale 3x3 */
+.wrapper {
+    clear: both;
+/*    border: 2px solid #f76707;
+    border-radius: 5px;*/
+    /*background-color: #fff4e6;*/
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, 300px);
+    min-width: 400px;
+    align-items: center;
+    justify-items: center;
+}
+.wrapper > div {
+/*    border: 2px solid #ffa94d;
+    border-radius: 5px;*/
+    /*background-color: #ffd8a8;*/
+    padding: 1em;
+    /*color: #d9480f;*/
+}
+
+body {
+    /*overflow-x: hidden;*/
+}
+/*le hamburger à gauche pour la barre de navigation*/
+/* ajoute une couleur de fond pour le hambu */
+.hambu {
+    background-color: #FFF;
+    overflow: hidden;
+    display: block;
+    float: left;
+}
+
+/* Style the links inside the navigation bar */
+.hambu a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.hambu a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.hambu a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+/*Une petite animation*/
+a svg{
+    transition:all .5s ease;
+    &:hover{
+        transform: rotate(180deg);
+    }
+}
+/*Les cases impaires de la grid sur la page principale*/
+#un img, #trois img, #sept img, #neuf img{
+    width: 45%;
+    display: block;
+    margin: 0 auto;
+}
+/*la case centrale*/
+#cinq img{
+    width: 75%;
+    display: block;
+    margin: 0 auto;
+}
+/*Les cases paires pour afficher du texte*/
+#deux, #quatre, #six, #huit{
+    font-size: 2em;
+    text-justify: inter-word;
+}
+/*La page produits*/
+#produits h1{
+    clear: both;
+    text-align: center;
+}
+#produits footer{
+    clear: both;
+}
+/* 
+/*#ico{
+  display: none;
+}
+ 
+.menu{
+  background: #000;
+  display: none;
+  padding: 5px;
+  width: 320px;
+  @include border-radius(5px);
+
+  #transition: all 0.5s ease;
+ 
+  a{
+    display: block;
+    color: #fff;
+    text-align: center;
+    padding: 10px 2px;
+    margin: 3px 0;
+    text-decoration: none;
+    background: #444;
+ 
+    &:nth-child(1){
+      margin-top: 0;
+      @include border-radius(3px 3px 0 0 );
+    }
+    &:nth-child(5){
+      margin-bottom: 0;
+      @include border-radius(0 0 3px 3px);
+    }
+ 
+    &:hover{
+      background: #555;
+    }
+  }
+}*/
+/*Les produits*/
+#pr{
+    font-family: "Segoe Script";
+}
+/*La grille pour les produits 7 colonnes */
+#pro{
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 20px;
+    /*grid-auto-rows: minmax(10px, auto);*/
+    grid-auto-rows: minmax(40px, auto);
+    box-sizing: border-box;
+    align-items: center;
+    justify-items: center;
+}
+/*Pour les 4 images de petite taille*/
+#im1pro, #im2pro, #im3pro, #im4pro{
+    width: 50%;
+}
+/*Pour la grande image*/
+@im5pro{
+    width: 80%;
+}
+/*On place les éléments dans la grille*/
+/*le titre*/
+#h1pro{
+    grid-column: 1 /span 4;
+    grid-row: 1;
+/*    border: 2px solid #f76707;
+    border-radius: 5px;*/
+}
+/*le sous titre pour le prix*/
+#h2pro{
+    grid-column: 1 /span 4;
+    grid-row: 2;
+/*    border: 2px solid #f76707;
+    border-radius: 5px;*/
+}
+/*Les tailles des différents articles*/
+#taillepro{
+    grid-column: 1 /span 4;
+    grid-row: 3;
+/*    border: 2px solid #f76707;
+    border-radius: 5px;*/
+}
+#taillepro > label{
+    padding: 14px;
+    font-size: 1.4em;
+    display: inline;
+    /*    float: left;*/
+    margin: 0;
+}
+/*la description des articles*/
+#despro{
+    grid-column: 1 /span 4;
+    grid-row: 4;
+/*    border: 2px solid #f76707;
+    border-radius: 5px;*/
+    display: block;
+    font-size: 1.2em;
+}
+/*#despro li{
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    padding: 5px;
+}*/
+/*les petites images*/
+#im1pro{
+    grid-column: 1;
+    grid-row: 5;
+/*    border: 2px solid #f76707;
+    border-radius: 5px;*/
+    margin: 0 auto;
+}
+#im2pro{
+    grid-column: 2;
+    grid-row: 5;
+/*    border: 2px solid #f76707;
+    border-radius: 5px;*/
+    margin: 0 auto;
+}
+#im3pro{
+    grid-column: 3;
+    grid-row: 5;
+/*    border: 2px solid #f76707;
+    border-radius: 5px;*/
+    margin: 0 auto;
+}
+#im4pro{
+    grid-column: 4;
+    grid-row: 5;
+/*    border: 2px solid #f76707;
+    border-radius: 5px;*/
+    margin: 0 auto;
+}
+/*la grande image*/
+#im5pro{
+    grid-column: 5/ span 3;
+    grid-row: 1 / span 5;
+    min-width: 200px;
+    min-height: 200px;
+    max-width: 600px;
+    max-height: 700px;
+/*    border: 2px solid #f76707;
+    border-radius: 5px;*/
+}
+/*#pro input[type="radio"] + label*/ 
+/*#taillepro form{
+   display: grid;
+   float: left;
+}*/
+/*La page ajout au panier*/
+#ajpanier{
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 2em;
+    color: blue;
+    padding: 15px;
+    margin: 20px;
+    display: block;
+}
+/*pour les pages créées en JS des différents articles*/
+#robes, #chemises, #pantalons, #blousons, #chapeaux, #jupes, #escarpins, #sacs, #lunettes, #baskets, #femmes, #hommes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    grid-auto-rows: minmax(40px, auto);
+    min-width: 400px;
+    align-items: center;
+    justify-items: center;
+}
+.robe, .chemise, .pantalon, .blouson, .chapeau, .jupe, .escarpin, .sac, .lunette, .basket, .femme, .homme{
+    clear: both;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+#robes img, #chemsises img, #pantalons img, #blousons img, #chapeaux img, #jupes img, #escarpins img, #sacs img, #lunettes img, #baskets img, #femmes img, #hommes img{
+    max-width: 98%;
+    /*max-height: 98%;*/
+    padding: 1%;
+    margin: 1% auto;
+}
+#baskets0{
+    grid-column: 1;
+    grid-row: 1;
+}
+/*La page Mentions Légales qui sert aussi pour les autres pages officielles*/
+#mentions_legales{
+    font-family: Helvetica, Arial;
+    font-size: 1.2em;
+    text-align: justify;
+    margin-left: 3%;
+    margin-right: 3%;
+}
+/*Pour les titres des pages officielles*/
+#mentions_legales h1{    
+    clear: both;
+    display: block;
+    text-align: center;
+}
+/*Pour la page actualités qui contient un iframe*/
+#mentions_legales iframe{
+    padding: 1%;
+    margin: 0 auto;
+}
+/*le bouton reset des pages officielles qui contiennent un formulaire*/
+input[type="reset"]{
+    float:right;
+    font-size:20px;
+    color:red;
+    padding: 5px;
+}
+/*le label pour le bouton reset*/
+#zero{
+    float: right;
+}
+/*la page Contact*/
+#contact{
+    margin: 1%;
+}
+#contact h1{
+    clear: both;
+    text-align: center;
+    padding-bottom: 30px;
+    text-align: center;
+}
+#contact h2{
+    text-align: center;
+}
+#contact label{
+    font-size: 18px;
+    display:inline-block; 
+    width:500px; 
+    text-align: right;                
+}
+#contact select{
+    font-size: 16px;
+}            
+#contact input{
+    padding: 8px 5px;
+}
+#contact p{
+    line-height: 2.8em;
+}
+/*un peu de couleur*/
+::placeholder{color:blue;}
+#contact textarea{
+    width: 450px;
+    height: 220px;
+    vertical-align: top;
+}
+/*le bouton envoyer*/
+#contact input[type="submit"]{
+    font-size:20px;
+    color:blue;
+    padding: 15px;
+    border:1px solid green;
+    border-radius: 20px;
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+#contact input[type="submit"]:hover{
+    background-color: cyan;}
+/*Alignement des labels à droite pour le bouton reset*/
+#contact .czero{
+    text-align: right;
+    float: right;
+}
+/*A gauche pour le bouton Envoyer*/
+#contact .cvalid{
+    text-align: left;
+}
+/*La page recrutement*/
+#recrut h1{
+    clear: both;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#recrut label{
+    font-size: 18px;
+    display:inline-block; 
+    width:500px; 
+    text-align: right;
+}
+#recrut select{
+    font-size: 16px;
+}            
+#recrut input{
+    padding: 8px 5px;
+}
+#recrut p{
+    line-height: 2.8em;
+}
+::placeholder{color:blue;}
+#recrut textarea{
+    width: 450px;
+    height: 220px;
+    vertical-align: top;
+}
+#recrut input[type="submit"]{
+    font-size:20px;
+    color:blue;
+    padding: 15px;
+    border:1px solid green;
+    border-radius: 20px;
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+#recrut input[type="submit"]:hover{
+    background-color: cyan;}
+#recrut .rzero{
+    text-align: right;
+    float: right;
+}
+#recrut .rvalid{
+    text-align: left;
+}
+/*la page Réservation*/
+#reserv h1{
+    clear: both;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#reserv label{
+    font-size: 18px;
+    display:inline-block; 
+    width:300px; 
+    text-align: right;
+}
+#reserv input{
+    padding: 8px 5px;
+}
+#reserv p{
+    line-height: 2.8em;
+    text-align: center;
+}
+/*toujous de la couleur*/
+::placeholder{color:blue;}
+#reserv img{
+    display: inline;
+    width: 30%;
+}
+#reserv textarea{
+    width: 450px;
+    height: 220px;
+    vertical-align: top;
+}
+#reserv input[type="submit"]{
+    font-size:20px;
+    color:blue;
+    padding: 15px;
+    border:1px solid green;
+    border-radius: 20px;
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+#reserv input[type="submit"]:hover{
+    background-color: cyan;
+}
+#reserv .rzero{
+    text-align: right;
+    float: right;
+}
+#reserv .rvalid{
+    text-align: left;
+}
+/*la page panier*/
+#pan h1{
+    clear: both;
+    text-align: center;
+    padding-bottom: 30px;
+}
+#pan h2{
+    text-align: center;
+    padding: 5px;
+}
+#pan img{
+    width: 5%;
+    margin: 0 auto;
+}
+#passpaiem{
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 2em;
+    color: blue;
+    padding: 15px;
+    margin: 20px;
+    display: block;
+}
+#pancb{
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+}
+/*la page pour le formulaire d'inscription*/
+#inscript{
+    float: left;
+    width: 50%;
+}
+#connec{
+    float: left;
+    width: 50%;
+}
+#boutinscipt{
+    clear: both;
+    display: block;
+}
+#forminscipt{
+    clear: both;
+    display: block;
+}
+#forminscipt label{
+    font-size: 18px;
+    display:inline-block; 
+    width:300px; 
+    text-align: right;                
+}
+#forminscipt h1{
+    text-align: center;
+}
+#boutinscipt input[type="submit"]{
+    font-size:20px;
+    color:blue;
+    padding: 15px;
+    border:1px solid green;
+    border-radius: 20px;
+    transition-property: background-color;
+    transition-duration: 3s;
+}
+#boutinscipt input[type="submit"]:hover{
+    background-color: cyan;
+}
+#boutinscipt .rzero{
+    text-align: right;
+    float: right;
+}
+#boutinscipt .rvalid{
+    text-align: left;
+}
+/*les actualités*/
+#actuals iframe{
+    display: block;
+    margin: 0 auto;
+}
+/* on ataque le responsive design*/
+@media screen and (max-width: 1024px){
+    .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    .sidebar a {float: left;}
+    div.content {margin-left: 0;}
+} 
+
+@media screen and (max-width: 480px)
+{
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}   
+
+    .sidebar a {
+        text-align: center;
+        float: none;
+    }
+}
